@@ -81,17 +81,17 @@
 
   /* HERO */
   .hero{position:relative;min-height:100svh;padding-top:58px;display:flex;flex-direction:column;overflow:hidden}
-  #heroCanvas{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:2}
+  #heroCanvas{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:2;overflow:hidden}
   .hero-meta-row{display:flex;justify-content:space-between;align-items:flex-start;padding:clamp(2rem,4vw,3.5rem) var(--pad-x) 0;position:relative;z-index:3;flex-wrap:wrap;gap:1rem}
   .hero-tag{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--orange);display:flex;align-items:center;gap:0.8rem;opacity:0;animation:fadeIn 0.6s ease 0.3s forwards}
   .hero-tag::after{content:'';display:block;width:32px;height:0.5px;background:var(--orange)}
   .hero-sub-right{font-size:11px;letter-spacing:0.08em;text-transform:uppercase;color:var(--text-3);text-align:right;line-height:1.7;opacity:0;animation:fadeIn 0.6s ease 0.4s forwards}
   @keyframes fadeIn{to{opacity:1}}
   .hero-stage{flex:1;display:flex;flex-direction:column;justify-content:center;padding:0 var(--pad-x);position:relative;z-index:3}
-  .statement-spacer{display:block;visibility:hidden;font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.2rem,4.8vw,4.6rem);line-height:1.0;letter-spacing:-0.03em;pointer-events:none;user-select:none}
+  .statement-spacer{display:block;visibility:hidden;font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(1.75rem,7.5vw,4.6rem);line-height:1.1;letter-spacing:-0.03em;pointer-events:none;user-select:none}
   .resolution-wrap{opacity:0;transform:translateY(16px);transition:opacity 0.9s ease,transform 0.9s ease;pointer-events:none}
   .resolution-wrap.visible{opacity:1;transform:translateY(0);pointer-events:auto}
-  .resolution-line1,.resolution-line2,.resolution-line3{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.2rem,4.8vw,4.6rem);line-height:1.0;letter-spacing:-0.03em;color:var(--text);display:block}
+  .resolution-line1,.resolution-line2,.resolution-line3{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(1.75rem,7.5vw,4.6rem);line-height:1.1;letter-spacing:-0.03em;color:var(--text);display:block}
   .res-connect{font-style:italic;font-family:'Instrument Serif',Georgia,serif;font-weight:400;color:var(--orange);font-size:1.05em}
   .res-break{color:transparent;-webkit-text-stroke:1.5px var(--text)}
   .resolution-divider{width:40px;height:0.5px;background:var(--border-2);margin:clamp(1.8rem,3vw,2.5rem) 0;opacity:0;transition:opacity 0.6s ease 0.4s}
@@ -224,6 +224,7 @@
     .about-grid{grid-template-columns:1fr;gap:3rem}
     .about-h2{font-size:clamp(2.8rem,8vw,4.2rem)}
     .hero-ctas{flex-direction:column;align-items:flex-start;gap:1.25rem}
+    .hero-stage{padding-top:1rem;padding-bottom:1rem}
   }
   @media(max-width:680px){
     .what-grid{grid-template-columns:1fr}
@@ -520,8 +521,9 @@ function measureText() {
   const heroRect   = heroEl.getBoundingClientRect();
   const spacerRect = spacer.getBoundingClientRect();
   const cs = getComputedStyle(spacer);
+  // Use the browser's computed font size — clamped by CSS already
   fontSize = parseFloat(cs.fontSize);
-  lineH    = fontSize * 1.0;
+  lineH    = fontSize * 1.1; // match line-height:1.1
   textX    = spacerRect.left - heroRect.left;
   textY    = spacerRect.top  - heroRect.top;
 }
@@ -533,17 +535,32 @@ function drawText(alpha) {
   ctx.textBaseline = 'top';
   try { ctx.letterSpacing = '-0.03em'; } catch(e) {}
   const col = textColor();
+  // Clamp draw width to canvas — measure first line and scale if needed
+  const vw = heroEl.offsetWidth;
+  const padX = parseFloat(getComputedStyle(heroEl).paddingLeft) || 24;
+  const maxW = vw - (padX * 2);
+
+  // Auto-scale font if first line overflows on narrow screens
+  let drawSize = fontSize;
+  ctx.font = `800 ${drawSize}px Syne, sans-serif`;
+  const line1W = ctx.measureText('Most digital experiences').width;
+  if (line1W > maxW) {
+    drawSize = Math.floor(drawSize * (maxW / line1W));
+    ctx.font = `800 ${drawSize}px Syne, sans-serif`;
+  }
+  const actualLineH = drawSize * 1.1;
+
   ctx.fillStyle = col;
   ctx.fillText('Most digital experiences', textX, textY);
-  const line2Y = textY + lineH;
-  const prefix = 'do not ';
+  const line2Y  = textY + actualLineH;
+  const prefix  = 'do not ';
   ctx.fillStyle = col;
   ctx.fillText(prefix, textX, line2Y);
   const pw = ctx.measureText(prefix).width;
   ctx.fillStyle = ORANGE;
   ctx.fillText('fail.', textX + pw, line2Y);
   ctx.fillStyle = col;
-  ctx.fillText('They fragment.', textX, textY + lineH * 2);
+  ctx.fillText('They fragment.', textX, textY + actualLineH * 2);
   ctx.restore();
 }
 
@@ -553,7 +570,19 @@ function sampleParticles() {
   const off = document.createElement('canvas');
   off.width = W; off.height = H;
   const oc = off.getContext('2d');
-  oc.font = `800 ${fontSize}px Syne, sans-serif`;
+
+  // Use same auto-scaling as drawText
+  const padX = parseFloat(getComputedStyle(heroEl).paddingLeft) || 24;
+  const maxW = W - (padX * 2);
+  let drawSize = fontSize;
+  oc.font = `800 ${drawSize}px Syne, sans-serif`;
+  const line1W = oc.measureText('Most digital experiences').width;
+  if (line1W > maxW) {
+    drawSize = Math.floor(drawSize * (maxW / line1W));
+  }
+  const actualLineH = drawSize * 1.1;
+
+  oc.font = `800 ${drawSize}px Syne, sans-serif`;
   oc.textBaseline = 'top';
   try { oc.letterSpacing = '-0.03em'; } catch(e) {}
   const col = textColor();
@@ -561,18 +590,18 @@ function sampleParticles() {
   oc.fillText('Most digital experiences', textX, textY);
   const prefix = 'do not ';
   oc.fillStyle = col;
-  oc.fillText(prefix, textX, textY + lineH);
+  oc.fillText(prefix, textX, textY + actualLineH);
   const pw = oc.measureText(prefix).width;
   oc.fillStyle = ORANGE;
-  oc.fillText('fail.', textX + pw, textY + lineH);
+  oc.fillText('fail.', textX + pw, textY + actualLineH);
   oc.fillStyle = col;
-  oc.fillText('They fragment.', textX, textY + lineH * 2);
+  oc.fillText('They fragment.', textX, textY + actualLineH * 2);
 
   const imgData = oc.getImageData(0, 0, W, H);
   const pts = [];
   const step = 3;
   const y0 = Math.max(0, Math.floor(textY) - 2);
-  const y1 = Math.min(H, Math.ceil(textY + lineH * 3) + 4);
+  const y1 = Math.min(H, Math.ceil(textY + actualLineH * 3) + 4);
   for (let py = y0; py < y1; py += step) {
     for (let px = 0; px < W; px += step) {
       const i = (py * W + px) * 4;
@@ -664,8 +693,13 @@ function showResolution() {
 replayBtn.addEventListener('click', runSequence);
 
 document.fonts.ready.then(() => {
-  resizeCanvas();
-  setTimeout(runSequence, 400);
+  // Double rAF ensures layout is fully painted before we measure
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      resizeCanvas();
+      setTimeout(runSequence, 400);
+    });
+  });
 });
 </script>
 </body>
