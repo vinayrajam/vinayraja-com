@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=Instrument+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+<title>Vinay Raja — for NGS Super · Head of Marketing &amp; Digital Experience</title>
+<meta name="description" content="Why Vinay Raja is a strong fit for NGS Super's Head of Marketing &amp; Digital Experience — brand, marketing and digital experience run as one system, across 15+ years.">
+<meta name="robots" content="noindex, nofollow">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vinayraja.com/jobs/ngs">
+<meta property="og:title" content="Vinay Raja — for NGS Super">
+<meta property="og:description" content="Brand, marketing and digital experience, run as one system. A short case for the Head of Marketing &amp; Digital Experience role.">
+<meta property="og:locale" content="en_AU">
+
+<style>
+  :root{
+    --bg:#f4efe6; --bg-alt:#ede7db;
+    --text:#111009; --text-2:#3a3730; --text-3:#7a746c;
+    --orange:#bf5b25; --orange-d:rgba(191,91,37,0.13);
+    --border:rgba(17,16,9,0.1); --border-2:rgba(17,16,9,0.18);
+    --nav-bg:rgba(244,239,230,0.92);
+    --logo-ink:#111009;
+    --card:#fffdf8;
+    --h-hero:clamp(3rem,8.5vw,8.4rem);
+    --h-sec:clamp(2.1rem,4.4vw,4.2rem);
+    --body:clamp(13px,1.1vw,15px);
+    --small:clamp(11px,0.9vw,13px);
+    --pad-x:max(1.5rem,5vw);
+    --col-gap:clamp(2rem,4vw,5rem);
+  }
+  [data-theme="dark"]{
+    --bg:#0e0d0a; --bg-alt:#161410;
+    --text:#ede8df; --text-2:#bdb7ae; --text-3:#706a62;
+    --border:rgba(237,232,223,0.09); --border-2:rgba(237,232,223,0.17);
+    --nav-bg:rgba(14,13,10,0.92);
+    --orange-d:rgba(191,91,37,0.16);
+    --logo-ink:#ede8df;
+    --card:#1b1915;
+  }
+  *,*::before,*::after{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; }
+  body{
+    font-family:'Instrument Sans',sans-serif; background:var(--bg); color:var(--text);
+    -webkit-font-smoothing:antialiased; overflow-x:hidden; line-height:1.6;
+    transition:background .35s,color .35s;
+  }
+  a{ color:inherit; }
+
+  /* NAV */
+  nav{
+    position:fixed; top:0; left:0; right:0; z-index:100; height:58px;
+    background:var(--nav-bg); backdrop-filter:blur(14px);
+    border-bottom:.5px solid var(--border);
+    display:flex; align-items:center; justify-content:space-between; padding:0 var(--pad-x);
+  }
+  .nav-l{ display:flex; align-items:center; gap:.7rem; }
+  .nav-mark{ width:26px; height:26px; display:block; }
+  .nav-logo{ font-family:'DM Mono',monospace; font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:var(--text); text-decoration:none; }
+  .nav-logo b{ color:var(--orange); font-weight:400; }
+  .nav-links{ display:flex; align-items:center; gap:clamp(1rem,2.5vw,2.2rem); }
+  .nav-link{ font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--text-3); text-decoration:none; transition:color .2s; white-space:nowrap; }
+  .nav-link:hover{ color:var(--text); }
+  .nav-cv{ color:var(--orange); border:.5px solid var(--orange); padding:7px 14px; }
+  .nav-cv:hover{ background:var(--orange); color:var(--bg); }
+  .nav-hide{ display:inline; }
+  .tbtn{ background:none; border:.5px solid var(--border-2); width:30px; height:30px; border-radius:50%; flex-shrink:0; cursor:pointer; display:flex; align-items:center; justify-content:center; font-size:13px; color:var(--text-3); transition:border-color .2s,color .2s; }
+  .tbtn:hover{ border-color:var(--orange); color:var(--orange); }
+
+  /* HERO */
+  .hero{ padding:58px var(--pad-x) 0; min-height:100svh; display:flex; flex-direction:column; justify-content:center; }
+  .hero-inner{ padding:clamp(2rem,5vw,4rem) 0 clamp(2rem,4vw,3rem); width:100%; }
+  .hero-top{ display:flex; justify-content:space-between; align-items:flex-start; gap:1.5rem; flex-wrap:wrap; }
+  .eyebrow{ font-family:'DM Mono',monospace; font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:var(--orange); display:flex; align-items:center; gap:.8rem; }
+  .eyebrow::after{ content:''; width:32px; height:.5px; background:var(--orange); }
+  .hero-meta{ font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--text-3); text-align:right; line-height:1.8; }
+  .hero-meta b{ color:var(--text-2); font-weight:500; }
+  .hero-h1{ font-family:'Syne',sans-serif; font-weight:800; font-size:var(--h-hero); line-height:.92; letter-spacing:-.04em; margin-top:clamp(1rem,2vw,1.8rem); }
+  .hero-h1 .outline{ color:transparent; -webkit-text-stroke:1.5px var(--text); }
+  .hero-h1 .hi{ color:var(--orange); }
+  .hero-body{ display:grid; grid-template-columns:1.15fr 1fr; gap:var(--col-gap); align-items:end; border-top:.5px solid var(--border); margin-top:clamp(1.5rem,2.5vw,2.2rem); padding-top:clamp(1.25rem,2vw,1.75rem); }
+  .hero-desc{ font-size:var(--body); font-weight:300; line-height:1.8; color:var(--text-2); }
+  .hero-cta-row{ display:flex; flex-direction:column; gap:.9rem; align-items:flex-start; }
+  .btn{ font-family:'Syne',sans-serif; font-weight:700; font-size:12px; letter-spacing:.1em; text-transform:uppercase; text-decoration:none; padding:14px 28px; display:inline-flex; align-items:center; gap:.7rem; transition:background .25s,color .25s,border-color .25s; white-space:nowrap; }
+  .btn-primary{ color:var(--bg); background:var(--text); }
+  .btn-primary:hover{ background:var(--orange); }
+  .btn-ghost{ color:var(--text); border:.5px solid var(--border-2); }
+  .btn-ghost:hover{ border-color:var(--orange); color:var(--orange); }
+  .btn .ar{ transition:transform .2s; }
+  .btn:hover .ar{ transform:translateY(2px); }
+  .btn .arx{ transition:transform .2s; }
+  .btn:hover .arx{ transform:translateX(3px); }
+
+  /* SECTIONS */
+  section{ padding:clamp(60px,9vw,110px) var(--pad-x); }
+  .s-label{ font-family:'DM Mono',monospace; font-size:10px; letter-spacing:.25em; text-transform:uppercase; color:var(--orange); margin-bottom:clamp(2rem,3.5vw,3.5rem); display:flex; align-items:center; gap:.75rem; }
+  .s-label::before{ content:attr(data-n); color:var(--text-3); }
+  .sec-h2{ font-family:'Syne',sans-serif; font-weight:800; font-size:var(--h-sec); line-height:.95; letter-spacing:-.03em; }
+  .sec-h2 em{ font-style:italic; font-family:'Instrument Serif',Georgia,serif; font-weight:400; color:var(--orange); font-size:1.06em; }
+  .sec-body{ font-size:var(--body); font-weight:300; line-height:1.8; color:var(--text-2); }
+  .two-col-intro{ display:grid; grid-template-columns:1fr 1fr; gap:var(--col-gap); align-items:end; margin-bottom:clamp(2.5rem,4vw,4.5rem); }
+
+  /* FIT */
+  .fit{ background:var(--bg); }
+  .fit-note{ margin-top:1.5rem; font-family:'DM Mono',monospace; font-size:11px; letter-spacing:.04em; line-height:1.8; color:var(--text-3); border-left:2px solid var(--orange); padding-left:1.1rem; }
+  .fit-note b{ color:var(--text-2); font-weight:400; }
+
+  /* PILLAR MAP — signature */
+  .pillars{ background:var(--bg-alt); }
+  .pmap{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--border); border:.5px solid var(--border); }
+  .pcard{ background:var(--bg); padding:clamp(1.5rem,2.4vw,2.4rem); display:flex; flex-direction:column; transition:background .25s; }
+  .pcard:hover{ background:var(--orange-d); }
+  .pcard-tag{ font-family:'DM Mono',monospace; font-size:9px; letter-spacing:.18em; text-transform:uppercase; color:var(--text-3); margin-bottom:1.1rem; }
+  .pcard-their{ font-family:'Instrument Sans',sans-serif; font-weight:600; font-size:clamp(1.05rem,1.55vw,1.25rem); letter-spacing:0; line-height:1.2; color:var(--orange); margin-bottom:.4rem; }
+  .pcard-arrow{ font-family:'DM Mono',monospace; font-size:11px; color:var(--text-3); margin:.6rem 0 1rem; }
+  .pcard-body{ font-size:var(--small); font-weight:300; line-height:1.75; color:var(--text-2); }
+  .pcard-body strong{ font-weight:500; color:var(--text); }
+
+  /* EDGE */
+  .edge{ background:var(--bg); }
+  .edge-rows{ display:flex; flex-direction:column; }
+  .edge-row{ display:grid; grid-template-columns:46px 1fr; gap:clamp(1.2rem,2.2vw,2.2rem); align-items:start; padding:clamp(1.4rem,2.3vw,2.2rem) 0; border-top:.5px solid var(--border); transition:padding-left .25s; }
+  .edge-row:last-child{ border-bottom:.5px solid var(--border); }
+  .edge-row:hover{ padding-left:.6rem; }
+  .edge-n{ font-family:'Syne',sans-serif; font-weight:800; font-size:clamp(1.3rem,2vw,1.8rem); color:var(--border-2); line-height:1; }
+  .edge-h{ font-family:'Instrument Sans',sans-serif; font-weight:600; font-size:clamp(1rem,1.45vw,1.18rem); letter-spacing:0; line-height:1.25; margin-bottom:.55rem; }
+  .edge-b{ font-size:var(--small); font-weight:300; line-height:1.75; color:var(--text-2); max-width:60ch; }
+
+  /* GAP — straight talk */
+  .gap{ background:#1d1b17; position:relative; overflow:hidden; }
+  [data-theme="dark"] .gap{ background:#0a0908; border-top:.5px solid var(--border); }
+  .gap .s-label{ color:var(--orange); }
+  .gap-grid{ display:grid; grid-template-columns:1fr 1fr; gap:var(--col-gap); position:relative; z-index:1; }
+  .gap-h2{ font-family:'Syne',sans-serif; font-weight:800; font-size:clamp(2.2rem,4.6vw,4rem); line-height:.93; letter-spacing:-.04em; color:#f0ebe2; }
+  [data-theme="dark"] .gap-h2{ color:var(--text); }
+  .gap-h2 em{ font-style:italic; font-family:'Instrument Serif',Georgia,serif; font-weight:400; color:var(--orange); font-size:1.05em; }
+  .gap-b{ font-size:var(--body); font-weight:300; line-height:1.8; color:rgba(240,235,226,0.66); margin-bottom:1.3rem; }
+  [data-theme="dark"] .gap-b{ color:var(--text-2); }
+  .gap-b:last-child{ margin-bottom:0; }
+  .gap-b strong{ color:#f0ebe2; font-weight:500; }
+  [data-theme="dark"] .gap-b strong{ color:var(--text); }
+
+  /* TIMELINE */
+  .timeline{ background:var(--bg-alt); }
+  .tl-rows{ display:flex; flex-direction:column; }
+  .tl-row{ display:grid; grid-template-columns:clamp(120px,18vw,200px) 1fr; gap:clamp(1.5rem,3vw,3rem); padding:clamp(1.4rem,2.3vw,2.2rem) 0; border-top:.5px solid var(--border); }
+  .tl-row:last-child{ border-bottom:.5px solid var(--border); }
+  .tl-period{ font-family:'DM Mono',monospace; font-size:10px; letter-spacing:.12em; color:var(--text-3); line-height:1.7; }
+  .tl-org{ font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--orange); margin-bottom:.4rem; }
+  .tl-role{ font-family:'Instrument Sans',sans-serif; font-weight:600; font-size:clamp(.95rem,1.3vw,1.05rem); letter-spacing:0; margin-bottom:.5rem; line-height:1.25; }
+  .tl-desc{ font-size:var(--small); font-weight:300; line-height:1.7; color:var(--text-2); }
+
+  /* CLOSE */
+  .close{ background:var(--bg); text-align:center; padding:clamp(80px,12vw,140px) var(--pad-x); }
+  .close-bar{ width:1px; height:64px; background:var(--border-2); margin:0 auto 3.5rem; }
+  .close-h2{ font-family:'Syne',sans-serif; font-weight:800; font-size:clamp(2.4rem,6.5vw,5.5rem); line-height:.92; letter-spacing:-.04em; margin-bottom:1.6rem; }
+  .close-h2 em{ font-style:italic; font-family:'Instrument Serif',Georgia,serif; font-weight:400; color:var(--orange); font-size:1.08em; }
+  .close-sub{ font-size:var(--body); font-weight:300; line-height:1.75; color:var(--text-2); max-width:440px; margin:0 auto 2.6rem; }
+  .close-btns{ display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
+  .close-meta{ margin-top:2.2rem; font-family:'DM Mono',monospace; font-size:11px; letter-spacing:.1em; color:var(--text-3); line-height:2; }
+  .close-meta a{ color:var(--orange); text-decoration:none; }
+
+  /* FOOTER */
+  footer{ padding:clamp(1.25rem,2vw,2rem) var(--pad-x); border-top:.5px solid var(--border); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:.75rem; }
+  .footer-mark{ display:flex; align-items:center; gap:.6rem; font-family:'Syne',sans-serif; font-weight:800; font-size:1rem; letter-spacing:-.02em; }
+  .footer-mark b{ color:var(--orange); }
+  .footer-mark svg{ width:22px; height:22px; }
+  .footer-right{ display:flex; align-items:center; gap:clamp(1rem,3vw,2rem); flex-wrap:wrap; }
+  .footer-link{ font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--text-3); text-decoration:none; transition:color .2s; }
+  .footer-link:hover{ color:var(--orange); }
+  .footer-copy{ font-size:11px; color:var(--text-3); }
+
+  :focus-visible{ outline:2px solid var(--orange); outline-offset:3px; }
+  /* LIFECYCLE MAP */
+  .lifecycle{ background:var(--bg-alt); }
+  .lc-track{ position:relative; display:flex; justify-content:space-between; gap:.5rem; margin-bottom:clamp(2rem,3vw,2.75rem); }
+  .lc-track::before{ content:''; position:absolute; top:17px; left:3%; right:3%; height:1.5px; background:var(--border-2); z-index:0; }
+  .lc-node{ position:relative; z-index:1; flex:1; background:none; border:none; cursor:pointer; display:flex; flex-direction:column; align-items:center; gap:.7rem; padding:0; font-family:inherit; }
+  .lc-dot{ width:36px; height:36px; border-radius:50%; background:var(--bg); border:1.5px solid var(--border-2); display:flex; align-items:center; justify-content:center; font-family:'Syne',sans-serif; font-weight:700; font-size:14px; color:var(--text-3); transition:all .22s; }
+  .lc-nlabel{ font-family:'DM Mono',monospace; font-size:10px; letter-spacing:.12em; text-transform:uppercase; color:var(--text-3); transition:color .22s; text-align:center; }
+  .lc-node:hover .lc-dot{ border-color:var(--orange); color:var(--orange); }
+  .lc-node.on .lc-dot{ background:var(--orange); border-color:var(--orange); color:#fff; }
+  .lc-node.on .lc-nlabel{ color:var(--text); }
+  .lc-panel{ background:var(--card); border:1px solid var(--border); padding:clamp(1.5rem,3vw,2.4rem); }
+  .lc-step{ font-family:'DM Mono',monospace; font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:var(--text-3); }
+  .lc-stage{ font-family:'Instrument Sans',sans-serif; font-weight:600; font-size:clamp(1.3rem,2.4vw,1.8rem); letter-spacing:-.01em; color:var(--orange); margin:.35rem 0 .5rem; }
+  .lc-member{ font-family:'Instrument Serif',Georgia,serif; font-style:italic; font-size:clamp(1.05rem,1.8vw,1.35rem); line-height:1.35; color:var(--text-2); margin-bottom:1.5rem; max-width:60ch; }
+  .lc-tags{ display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:1.5rem; }
+  .lc-tags span{ font-family:'DM Mono',monospace; font-size:10px; letter-spacing:.06em; color:var(--orange); background:var(--orange-d); border-radius:999px; padding:6px 12px; }
+  .lc-cols{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(1.5rem,3vw,2.5rem); }
+  .lc-blk-h{ font-family:'DM Mono',monospace; font-size:10px; letter-spacing:.16em; text-transform:uppercase; color:var(--text-3); margin-bottom:.6rem; padding-bottom:.5rem; border-bottom:.5px solid var(--border); }
+  .lc-blk-h.lever{ color:var(--orange); }
+  .lc-blk-b{ font-size:14px; font-weight:300; line-height:1.7; color:var(--text-2); }
+  .lc-blk-b strong{ font-weight:500; color:var(--text); }
+  .lc-fade{ animation:lcfade .45s ease; }
+  @keyframes lcfade{ from{opacity:0;transform:translateY(6px);} to{opacity:1;transform:none;} }
+  .lc-footnote{ margin-top:1.5rem; font-family:'DM Mono',monospace; font-size:10px; letter-spacing:.04em; line-height:1.7; color:var(--text-3); }
+  @media (max-width:900px){ .lc-cols{ grid-template-columns:1fr; gap:1.25rem; } }
+  @media (max-width:680px){ .lc-track{ flex-wrap:wrap; gap:1rem 0; justify-content:flex-start; } .lc-track::before{ display:none; } .lc-node{ flex:0 0 33.33%; } }
+  @media (prefers-reduced-motion:reduce){ .lc-fade{ animation:none; } }
+  .fu{ opacity:0; transform:translateY(20px); transition:opacity .65s ease,transform .65s ease; }
+  .fu.in{ opacity:1; transform:none; }
+
+  @media (max-width:900px){
+    .hero-body{ grid-template-columns:1fr; gap:2rem; }
+    .two-col-intro{ grid-template-columns:1fr; gap:1.5rem; }
+    .pmap{ grid-template-columns:1fr; }
+    .gap-grid{ grid-template-columns:1fr; gap:2.5rem; }
+    .hero-meta{ text-align:left; }
+  }
+  @media (max-width:680px){
+    .nav-hide{ display:none; }
+    .tl-row{ grid-template-columns:1fr; gap:.6rem; }
+    .edge-row{ grid-template-columns:32px 1fr; }
+  }
+  @media (max-width:480px){
+    :root{ --pad-x:1.25rem; }
+    .btn,.close-btns .btn{ width:100%; justify-content:center; }
+    .hero-cta-row{ align-items:stretch; }
+  }
+  @media (prefers-reduced-motion:reduce){
+    .fu{ opacity:1; transform:none; transition:none; }
+    *{ transition-duration:.01ms !important; }
+  }
+</style>
+</head>
+<body data-theme="light">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="vr" viewBox="0 0 52.27 52.27">
+    <path style="fill:var(--logo-ink)" d="M35.49,30.29c1.52-.25,2.71-.83,3.58-1.75.94-.99,1.41-2.3,1.41-3.93,0-1.86-.57-3.33-1.72-4.42-1.15-1.09-2.73-1.63-4.75-1.63h-1.66l-1.54,2.87h2.44c2.65,0,3.98,1.06,3.98,3.19,0,1.98-1.23,2.97-3.69,2.97h-6.05l-1.54,2.87h5.8l5.2,7.32h3.7l-5.15-7.48Z"/>
+    <polygon style="fill:var(--orange)" points="21.78 37.41 31.93 18.56 28.38 18.56 20 34.11 21.78 37.41"/>
+    <polygon style="fill:var(--logo-ink)" points="11.13 18.56 7.57 18.56 17.92 37.77 21.48 37.77 11.13 18.56"/>
+    <path style="fill:var(--orange)" d="M26.13,3.64c12.41,0,22.5,10.09,22.5,22.5s-10.09,22.5-22.5,22.5S3.63,38.54,3.63,26.14,13.73,3.64,26.13,3.64M26.13,0C11.7,0,0,11.7,0,26.14s11.7,26.13,26.13,26.13,26.14-11.7,26.14-26.13S40.57,0,26.13,0"/>
+  </symbol>
+</svg>
+
+<nav aria-label="Main">
+  <a class="nav-l" href="https://vinayraja.com" style="text-decoration:none" rel="noopener">
+    <svg class="nav-mark" aria-hidden="true"><use href="#vr"/></svg>
+    <span class="nav-logo">Vinay Raja<b>.</b></span>
+  </a>
+  <div class="nav-links">
+    <a href="#journey" class="nav-link nav-hide">The journey</a>
+    <a href="#edge" class="nav-link nav-hide">The edge</a>
+    <a href="./VinayRaja_NGS_HeadMarketingDX_2026.pdf" class="nav-link nav-cv" download>Download CV</a>
+    <button class="tbtn" id="tbtn" type="button" aria-label="Toggle dark mode">◐</button>
+  </div>
+</nav>
+
+<main>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-top fu">
+      <p class="eyebrow">Application · NGS Super</p>
+      <p class="hero-meta"><b>Head of Marketing &amp; Digital Experience</b><br>Sydney · 15+ years · CPM</p>
+    </div>
+
+    <h1 class="hero-h1 fu" style="transition-delay:.06s">
+      <span class="outline">Brand. Engagement.</span><br>
+      <span class="outline">Experience.</span><br>
+      <span class="hi">Run as one.</span>
+    </h1>
+
+    <div class="hero-body fu" style="transition-delay:.14s">
+      <p class="hero-desc">NGS is hiring one leader to run brand and acquisition, engagement and retention, and digital experience as a single team. That intersection — where the three either hold together or quietly pull apart — is exactly where I've spent fifteen years. This is the short version of why I'd be a strong fit.</p>
+      <div class="hero-cta-row">
+        <a class="btn btn-primary" href="./VinayRaja_NGS_HeadMarketingDX_2026.pdf" download>Download CV <span class="ar">↓</span></a>
+        <a class="btn btn-ghost" href="mailto:vinayraja@gmail.com?subject=Head%20of%20Marketing%20%26%20Digital%20Experience%20at%20NGS%20Super">Get in touch <span class="arx">→</span></a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="fit" id="fit" aria-labelledby="fit-h">
+  <div class="s-label" data-n="01 —">The fit</div>
+  <div class="two-col-intro">
+    <h2 class="sec-h2 fu" id="fit-h">The role is the job<br>I've already <em>done.</em></h2>
+    <p class="sec-body fu" style="transition-delay:.1s">This isn't two skill sets I'm bridging — it's one remit I've been practising. For over a decade I've led marketing and digital experience together: building an in-house marketing, creative and digital function at AVJennings, and running brand, campaigns and content across APAC at PageGroup before that. The CPM formalises the marketing discipline; the delivery record is what backs it.</p>
+  </div>
+  <p class="fit-note fu"><b>The short claim:</b> most candidates are strong in one pillar and adequate in the other two. My whole career has been the seam where all three meet — and the work of making them move together.</p>
+</section>
+
+<section class="lifecycle" id="journey" aria-labelledby="jrny-h">
+  <div class="s-label" data-n="02 —">The member journey</div>
+  <div class="two-col-intro">
+    <h2 class="sec-h2 fu" id="jrny-h">One member,<br>end to <em>end.</em></h2>
+    <p class="sec-body fu" style="transition-delay:.1s; color:var(--text-3)">NGS already supports members at every stage — Member Online, Super Specialists, webinars, the <span style="color:var(--orange)">Planning for Retirement</span> seminars, Financial Planning and the NGS Pension. Brand, engagement and digital experience only create value when they hold together across that journey. Tap any stage to see the lever I'd pull — and where I've done it.</p>
+  </div>
+  <div class="lc-track fu" id="lcTrack" role="tablist" aria-label="Member journey stages">
+    <button class="lc-node on" role="tab" aria-selected="true" data-i="0"><span class="lc-dot">1</span><span class="lc-nlabel">Join</span></button>
+    <button class="lc-node" role="tab" aria-selected="false" data-i="1"><span class="lc-dot">2</span><span class="lc-nlabel">Learn</span></button>
+    <button class="lc-node" role="tab" aria-selected="false" data-i="2"><span class="lc-dot">3</span><span class="lc-nlabel">Grow</span></button>
+    <button class="lc-node" role="tab" aria-selected="false" data-i="3"><span class="lc-dot">4</span><span class="lc-nlabel">Plan</span></button>
+    <button class="lc-node" role="tab" aria-selected="false" data-i="4"><span class="lc-dot">5</span><span class="lc-nlabel">Retire</span></button>
+    <button class="lc-node" role="tab" aria-selected="false" data-i="5"><span class="lc-dot">6</span><span class="lc-nlabel">Advocate</span></button>
+  </div>
+  <div class="lc-panel fu" id="lcPanel" role="tabpanel" style="transition-delay:.08s">
+    <span class="lc-step" id="lcStep">Stage 1 of 6</span>
+    <div class="lc-stage" id="lcStage"></div>
+    <p class="lc-member" id="lcMember"></p>
+    <div class="lc-tags" id="lcTags"></div>
+    <div class="lc-cols">
+      <div><div class="lc-blk-h lever">The lever I'd pull</div><p class="lc-blk-b" id="lcLever"></p></div>
+      <div><div class="lc-blk-h">Where I've done it</div><p class="lc-blk-b" id="lcProof"></p></div>
+    </div>
+  </div>
+  <p class="lc-footnote fu">Illustrative mapping against NGS's publicly described products and services — to show how I think across the journey, not to prescribe.</p>
+</section>
+
+<section class="edge" id="edge" aria-labelledby="edge-h">
+  <div class="s-label" data-n="03 —">Where I'm different</div>
+  <div class="two-col-intro">
+    <h2 class="sec-h2 fu" id="edge-h">Four things most<br>candidates <em>won't bring.</em></h2>
+    <p class="sec-body fu" style="transition-delay:.1s; color:var(--text-3)">The pillars are the baseline. These are the reasons to choose me over a like-for-like marketer.</p>
+  </div>
+  <div class="edge-rows">
+    <article class="edge-row fu">
+      <div class="edge-n">01</div>
+      <div>
+        <h3 class="edge-h">A capability you'd own, not rent</h3>
+        <p class="edge-b">I built AVJennings' creative and digital function from scratch — the team, operating model and governance. For a fund investing in its next phase of transformation, I bring the playbook for building durable in-house capability rather than deepening agency reliance.</p>
+      </div>
+    </article>
+    <article class="edge-row fu" style="transition-delay:.05s">
+      <div class="edge-n">02</div>
+      <div>
+        <h3 class="edge-h">AI as practice, not theory</h3>
+        <p class="edge-b">NGS explicitly wants leaders who leverage AI and new ways of working. I don't just talk about it — I design and deploy AI-powered, customer-facing tools (this application is one example of the approach). That's a rare, concrete capability in marketing leadership.</p>
+      </div>
+    </article>
+    <article class="edge-row fu" style="transition-delay:.1s">
+      <div class="edge-n">03</div>
+      <div>
+        <h3 class="edge-h">Financial services, at board level</h3>
+        <p class="edge-b">As CDO and board member of Plasmatic, a fintech, I work across product positioning, digital experience and governance — giving me direct exposure to the financial-services sector and the board-level communication it involves.</p>
+      </div>
+    </article>
+    <article class="edge-row fu" style="transition-delay:.15s">
+      <div class="edge-n">04</div>
+      <div>
+        <h3 class="edge-h">A marketing foundation, not just craft</h3>
+        <p class="edge-b">My background reads "creative," but it's underpinned by a Certified Marketing Professional credential and fifteen years of demand generation, proposition development and go-to-market — the marketing discipline this role is built on.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="gap" id="gap" aria-labelledby="gap-h">
+  <div class="s-label" data-n="04 —">Straight talk</div>
+  <div class="gap-grid">
+    <h2 class="gap-h2 fu" id="gap-h">What I don't<br>bring — <em>yet.</em></h2>
+    <div>
+      <p class="gap-b fu">I haven't worked inside superannuation. The listing names it as nice-to-have rather than essential, and I'd treat it that way too — <strong>something to learn quickly and properly, not something to claim.</strong></p>
+      <p class="gap-b fu" style="transition-delay:.07s">What carries across is the part that's harder to teach: a genuinely customer-first mindset, fluency in regulated financial-services contexts, and a track record of building strategy that survives the boardroom and execution that holds at scale. The sector knowledge is the faster half to acquire.</p>
+    </div>
+  </div>
+</section>
+
+<section class="timeline" id="experience" aria-labelledby="exp-h">
+  <div class="s-label" data-n="05 —">Track record</div>
+  <h2 class="sec-h2 fu" id="exp-h" style="margin-bottom:clamp(2rem,3.5vw,3rem)">Where the<br>work was <em>done.</em></h2>
+  <div class="tl-rows">
+    <article class="tl-row fu">
+      <div class="tl-period">Apr 2018 — Sep 2025<br>7 years</div>
+      <div><div class="tl-org">AVJennings · Sydney</div><h3 class="tl-role">Creative &amp; Digital Experience Director</h3><p class="tl-desc">Built and led the in-house creative and digital function across ANZ — brand and acquisition, engagement and retention, digital experience, platform transformation and executive advisory.</p></div>
+    </article>
+    <article class="tl-row fu" style="transition-delay:.05s">
+      <div class="tl-period">Mar 2024 — Present<br>Board</div>
+      <div><div class="tl-org">Plasmatic · Singapore</div><h3 class="tl-role">Chief Digital Officer &amp; Board Member</h3><p class="tl-desc">Board-level brand, product-marketing and digital-experience leadership for an early-stage fintech software company in a regulated context.</p></div>
+    </article>
+    <article class="tl-row fu" style="transition-delay:.09s">
+      <div class="tl-period">Jun 2014 — Mar 2018<br>4 years</div>
+      <div><div class="tl-org">PageGroup · Singapore &amp; Sydney</div><h3 class="tl-role">Head of Creative Services, Asia Pacific</h3><p class="tl-desc">Transformed a production studio into a strategic, multidisciplinary marketing and creative function across APAC.</p></div>
+    </article>
+    <article class="tl-row fu" style="transition-delay:.13s">
+      <div class="tl-period">2013 — 2015</div>
+      <div><div class="tl-org">Infigo · Melbourne &amp; Singapore</div><h3 class="tl-role">Co-Founder &amp; Creative Director</h3><p class="tl-desc">Led brand, UX/UI and product for a mobile-first hospitality platform. Selected into the highly competitive Start-Up Chile accelerator.</p></div>
+    </article>
+  </div>
+</section>
+
+<section class="close" aria-labelledby="close-h">
+  <div class="close-bar" aria-hidden="true"></div>
+  <div class="s-label" style="justify-content:center" data-n="">Next step</div>
+  <h2 class="close-h2 fu" id="close-h">Let's <em>talk.</em></h2>
+  <p class="close-sub fu" style="transition-delay:.08s">If the fit reads as clearly to you as it does to me, I'd welcome a conversation about NGS Super's next phase — and how I'd help make it the fund of choice for retirement success.</p>
+  <div class="close-btns fu" style="transition-delay:.14s">
+    <a class="btn btn-primary" href="./VinayRaja_NGS_HeadMarketingDX_2026.pdf" download>Download CV <span class="ar">↓</span></a>
+    <a class="btn btn-ghost" href="mailto:vinayraja@gmail.com?subject=Head%20of%20Marketing%20%26%20Digital%20Experience%20at%20NGS%20Super">Get in touch <span class="arx">→</span></a>
+  </div>
+  <p class="close-meta fu" style="transition-delay:.2s">
+    <a href="mailto:vinayraja@gmail.com">vinayraja@gmail.com</a> · +61 431 188 899<br>
+    <a href="https://vinayraja.com" rel="noopener">vinayraja.com</a> · <a href="https://www.linkedin.com/in/vinayraja/" rel="noopener noreferrer">LinkedIn ↗</a>
+  </p>
+</section>
+
+</main>
+
+<footer>
+  <div class="footer-mark">
+    <svg aria-hidden="true"><use href="#vr"/></svg>
+    <span>Vinay Raja<b>.</b></span>
+  </div>
+  <div class="footer-right">
+    <a href="https://vinayraja.com" class="footer-link" rel="noopener">vinayraja.com ↗</a>
+    <span class="footer-copy">Prepared for NGS Super · 2026</span>
+  </div>
+</footer>
+
+<script>
+  const btn=document.getElementById('tbtn'), body=document.body;
+  const saved=localStorage.getItem('vr-theme');
+  const sys=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+  const initial=saved||sys;
+  body.setAttribute('data-theme',initial);
+  btn.setAttribute('aria-label',initial==='dark'?'Switch to light mode':'Switch to dark mode');
+  btn.addEventListener('click',()=>{
+    const next=body.getAttribute('data-theme')==='dark'?'light':'dark';
+    body.setAttribute('data-theme',next);
+    localStorage.setItem('vr-theme',next);
+    btn.setAttribute('aria-label',next==='dark'?'Switch to light mode':'Switch to dark mode');
+  });
+  const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});},{threshold:.09});
+  document.querySelectorAll('.fu').forEach(el=>obs.observe(el));
+
+  const lcStages=[
+    {stage:"Join",member:"Starting out — often defaulted in through their school or employer.",tags:["Choice of fund","Employer partnerships","Rollovers & consolidation"],lever:"Make joining and consolidating effortless, leaning on NGS's deep education-sector relationships — <strong>IEU, AIS and Catholic education</strong> — so the very first experience is frictionless.",proof:"At AVJennings I rebuilt acquisition journeys end to end — replacing static forms with <strong>digital-first flows</strong> that lifted completion and lead quality."},
+    {stage:"Learn",member:"Getting to grips with super — often for the first time.",tags:["Member Online","Webinars","Super Specialists"],lever:"Turn NGS's education tools, webinars and Super Specialists into one <strong>guided, low-effort path</strong> to understanding — true to 'dedicated to the dedicated'.",proof:"I've built content systems and UX governance that make complex information <strong>clear, accessible (WCAG) and consistent</strong> at scale."},
+    {stage:"Grow",member:"Building a balance mid-career, with competing financial pressures.",tags:["Contributions","Consolidation","Insurance","Sustainable investing"],lever:"Surface the right prompt at the right moment — extra contributions, consolidation, insurance and NGS's <strong>net-zero investment story</strong> — personalised, not generic.",proof:"I embed <strong>behavioural insight, analytics and A/B testing</strong> to lift engagement and conversion across the lifecycle."},
+    {stage:"Plan",member:"Approaching retirement, looking for confidence and clarity.",tags:["Retirement seminars","NGS Financial Planning","Retirement Income Strategy"],lever:"Stitch NGS's <strong>Planning for Retirement seminars and Financial Planning</strong> into one coherent journey, aligned to the Retirement Income Strategy.",proof:"My whole career is making brand, marketing and digital experience <strong>hold together across a journey</strong> — exactly this stitching problem."},
+    {stage:"Retire",member:"Drawing an income — and wanting reassurance it will last.",tags:["NGS Pension","Account-based pension","Proactive support"],lever:"Build confidence with clear <strong>NGS Pension</strong> guidance and proactive, human-plus-digital support at a high-stakes moment.",proof:"I design experiences that <strong>build customer confidence at decision moments</strong>, measured and optimised over time."},
+    {stage:"Advocate",member:"Engaged members and retirees who champion the fund.",tags:["Community & sponsorships","Sector awards","Referrals"],lever:"Turn NGS's <strong>community work, sector awards and partnerships</strong> into genuine advocacy and intergenerational growth.",proof:"I've delivered award-winning, community-focused brand work — including a <strong>Brandie for Best Community Branding</strong> — that deepens belonging."}
+  ];
+  const lcNodes=[...document.querySelectorAll('.lc-node')];
+  const lcStep=document.getElementById('lcStep'),lcStage=document.getElementById('lcStage'),lcMember=document.getElementById('lcMember'),lcTags=document.getElementById('lcTags'),lcLever=document.getElementById('lcLever'),lcProof=document.getElementById('lcProof'),lcPanel=document.getElementById('lcPanel');
+  function lcRender(i,animate){
+    const s=lcStages[i];
+    lcStep.textContent='Stage '+(i+1)+' of 6';
+    lcStage.textContent=s.stage;
+    lcMember.textContent=s.member;
+    lcTags.innerHTML=s.tags.map(t=>'<span>'+t+'</span>').join('');
+    lcLever.innerHTML=s.lever; lcProof.innerHTML=s.proof;
+    if(animate!==false){ lcPanel.classList.remove('lc-fade'); void lcPanel.offsetWidth; lcPanel.classList.add('lc-fade'); }
+    lcNodes.forEach((n,j)=>{ n.classList.toggle('on', j===i); n.setAttribute('aria-selected', j===i); });
+  }
+  lcNodes.forEach(n=> n.addEventListener('click', ()=>lcRender(+n.dataset.i, true)));
+  if(lcNodes.length) lcRender(0, false);
+</script>
+</body>
+</html>
