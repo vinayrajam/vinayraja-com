@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K9KQJZZB');</script>
+<!-- End Google Tag Manager -->
+<title>Vinay Raja · for Schneider Electric · Web Product Experience Lead</title>
+<meta name="description" content="A working demonstration for Schneider Electric's Web Product Experience Lead brief: an interactive roadmap, the brief answered against named proof, and a page built the way a web estate should be.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Vinay Raja · for Schneider Electric">
+<meta property="og:description" content="Not a CV. A working demonstration for the Web Product Experience Lead brief.">
+<meta property="og:image" content="og-schneider.jpg">
+<meta property="og:locale" content="en_AU">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4efe6;--bg-alt:#ede7db;--text:#111009;--text-2:#3a3730;--text-3:#7a746c;
+  --orange:#bf5b25;--orange-d:rgba(191,91,37,0.12);--border:rgba(17,16,9,0.1);
+  --border-2:rgba(17,16,9,0.18);--nav-bg:rgba(244,239,230,0.92);
+  --h-hero:clamp(2.7rem,6.8vw,6.2rem);--h-sec:clamp(1.9rem,4vw,3.7rem);
+  --body:clamp(14px,1.05vw,16px);--small:clamp(12px,0.9vw,13.5px);
+  --pad-x:max(1.5rem,5vw);--col-gap:clamp(2rem,4vw,5rem);
+}
+[data-theme="dark"]{
+  --bg:#0e0d0a;--bg-alt:#161410;--text:#ede8df;--text-2:#bdb7ae;--text-3:#706a62;
+  --border:rgba(237,232,223,0.09);--border-2:rgba(237,232,223,0.17);
+  --nav-bg:rgba(14,13,10,0.92);--orange-d:rgba(191,91,37,0.17);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{font-family:'Instrument Sans',sans-serif;background:var(--bg);color:var(--text);
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:1.6;transition:background .35s,color .35s;}
+a{color:inherit;}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;height:58px;background:var(--nav-bg);
+  backdrop-filter:blur(14px);border-bottom:.5px solid var(--border);display:flex;align-items:center;
+  justify-content:space-between;padding:0 var(--pad-x);}
+.nav-logo{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--text);text-decoration:none;}
+.nav-logo b{color:var(--orange);font-weight:400;}
+.nav-right{display:flex;align-items:center;gap:clamp(1rem,2.5vw,1.75rem);}
+.nav-for{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--text-3);}
+.nav-cta{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--orange);text-decoration:none;border:.5px solid var(--orange);padding:7px 13px;white-space:nowrap;transition:background .2s,color .2s;}
+.nav-cta:hover{background:var(--orange);color:var(--bg);}
+.tbtn{background:none;border:.5px solid var(--border-2);width:30px;height:30px;border-radius:50%;flex-shrink:0;
+  cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--text-3);transition:border-color .2s,color .2s;}
+.tbtn:hover{border-color:var(--orange);color:var(--orange);}
+section{padding:clamp(56px,8vw,104px) var(--pad-x);}
+.s-label{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.25em;text-transform:uppercase;
+  color:var(--orange);margin-bottom:clamp(1.6rem,3vw,2.6rem);display:flex;align-items:center;gap:.75rem;}
+.s-label::before{content:attr(data-n);color:var(--text-3);}
+.sec-h2{font-family:'Syne',sans-serif;font-weight:800;font-size:var(--h-sec);line-height:.94;letter-spacing:-.03em;color:var(--text);}
+.sec-h2 em{font-style:italic;font-family:'Instrument Serif',Georgia,serif;font-weight:400;color:var(--orange);font-size:1.06em;}
+.sec-body{font-size:var(--body);line-height:1.8;color:var(--text-2);}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:var(--col-gap);align-items:end;margin-bottom:clamp(2rem,3.5vw,3.2rem);}
+/* HERO */
+.hero{padding-top:58px;min-height:90svh;display:flex;flex-direction:column;justify-content:center;}
+.hero-inner{padding:clamp(2rem,4vw,3rem) var(--pad-x);}
+.hero-tag{font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--orange);display:flex;align-items:center;gap:.8rem;margin-bottom:clamp(1.4rem,2.5vw,2rem);}
+.hero-tag::after{content:'';display:block;width:34px;height:.5px;background:var(--orange);}
+.hero-h1{font-family:'Syne',sans-serif;font-weight:800;font-size:var(--h-hero);line-height:.92;letter-spacing:-.04em;color:var(--text);max-width:15ch;}
+.hero-h1 em{font-style:italic;font-family:'Instrument Serif',Georgia,serif;font-weight:400;color:var(--orange);font-size:1.05em;letter-spacing:-.02em;}
+.hero-sub{font-size:var(--body);line-height:1.75;color:var(--text-2);max-width:60ch;
+  margin-top:clamp(1.5rem,2.5vw,2rem);border-top:.5px solid var(--border);padding-top:clamp(1.25rem,2vw,1.6rem);}
+.hero-ctas{display:flex;gap:1rem;flex-wrap:wrap;margin-top:clamp(1.75rem,3vw,2.4rem);}
+.btn{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+  text-decoration:none;padding:15px 28px;display:inline-flex;align-items:center;gap:.7rem;transition:background .25s,color .25s,border-color .25s;white-space:nowrap;cursor:pointer;border:none;}
+.btn-p{background:var(--text);color:var(--bg);}
+.btn-p::after{content:'\2193';}
+.btn-p:hover{background:var(--orange);}
+.btn-s{border:.5px solid var(--border-2);color:var(--text);background:none;}
+.btn-s::after{content:'\2192';transition:transform .2s;}
+.btn-s:hover{border-color:var(--orange);color:var(--orange);}
+.btn-s:hover::after{transform:translateX(3px);}
+/* BRIEF */
+.brief-intro{max-width:62ch;font-size:var(--body);line-height:1.8;color:var(--text-2);margin-bottom:clamp(1.8rem,3vw,2.6rem);}
+.brief-list{display:flex;flex-direction:column;border-top:.5px solid var(--border);}
+.brief-item{border-bottom:.5px solid var(--border);}
+.brief-q{width:100%;background:none;border:none;text-align:left;cursor:pointer;
+  padding:clamp(1.1rem,2vw,1.5rem) 0;display:grid;grid-template-columns:auto 1fr auto;gap:1rem;align-items:baseline;color:var(--text);transition:color .2s;}
+.brief-q:hover{color:var(--orange);}
+.brief-tag{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--orange);padding-top:5px;white-space:nowrap;}
+.brief-req{font-family:'Instrument Sans',sans-serif;font-weight:600;font-size:clamp(1rem,1.5vw,1.2rem);line-height:1.32;letter-spacing:-.005em;}
+.brief-plus{font-family:'DM Mono',monospace;font-size:16px;color:var(--text-3);transition:transform .3s;flex-shrink:0;}
+.brief-item.open .brief-plus{transform:rotate(45deg);color:var(--orange);}
+.brief-a{max-height:0;overflow:hidden;transition:max-height .4s ease;}
+.brief-item.open .brief-a{max-height:460px;}
+.brief-a-inner{padding:0 0 clamp(1.3rem,2.2vw,1.8rem) 0;display:grid;grid-template-columns:auto 1fr auto;gap:1rem;}
+.brief-a-body{grid-column:2;font-size:var(--small);line-height:1.75;color:var(--text-2);max-width:66ch;}
+.brief-a-body b{color:var(--text);font-weight:500;}
+.brief-proof{grid-column:2;margin-top:.9rem;font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);line-height:1.6;}
+.brief-proof span{color:var(--orange);}
+/* ROADMAP */
+.road{background:var(--bg-alt);}
+.road-frame{border:.5px solid var(--border-2);background:var(--bg);padding:clamp(1.3rem,2.5vw,2.2rem);margin-top:clamp(1.5rem,2.5vw,2.2rem);}
+.road-head{display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;flex-wrap:wrap;margin-bottom:1.4rem;}
+.road-poles{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-3);}
+.road-poles b{color:var(--orange);font-weight:500;}
+.road-slider{width:100%;margin:.2rem 0 1.6rem;-webkit-appearance:none;appearance:none;height:2px;background:var(--border-2);outline:none;}
+.road-slider::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:22px;height:22px;border-radius:50%;background:var(--orange);cursor:grab;border:3px solid var(--bg);box-shadow:0 0 0 1px var(--orange);}
+.road-slider::-moz-range-thumb{width:22px;height:22px;border-radius:50%;background:var(--orange);cursor:grab;border:3px solid var(--bg);}
+.road-scale{display:flex;justify-content:space-between;font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);margin-top:-1.1rem;margin-bottom:1.5rem;}
+.road-list{display:flex;flex-direction:column;gap:.5rem;}
+.road-row{display:grid;grid-template-columns:30px 1fr 34%;gap:clamp(.75rem,1.5vw,1.25rem);align-items:center;
+  padding:clamp(.7rem,1.3vw,1rem) clamp(.8rem,1.4vw,1.1rem);border:.5px solid var(--border);background:var(--bg-alt);
+  transition:transform .5s cubic-bezier(.2,.7,.2,1),border-color .25s;will-change:transform;}
+.road-rank{font-family:'DM Mono',monospace;font-size:12px;color:var(--orange);}
+.road-main{min-width:0;}
+.road-name{font-family:'Instrument Sans',sans-serif;font-weight:500;font-size:var(--small);color:var(--text);line-height:1.3;}
+.road-meta{font-family:'DM Mono',monospace;font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-3);margin-top:3px;}
+.road-meta .done{color:var(--orange);}
+.road-barwrap{height:6px;background:var(--border);overflow:hidden;}
+.road-bar{height:100%;width:0;background:var(--orange);transition:width .5s cubic-bezier(.2,.7,.2,1);}
+.road-note{margin-top:1.3rem;font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-3);}
+/* SYSTEMS (dark) */
+.sys{background:#1d1b17;position:relative;overflow:hidden;}
+[data-theme="dark"] .sys{background:#0a0908;border-top:.5px solid var(--border);}
+.sys .s-label{color:var(--orange);}
+.sys-h2{font-family:'Syne',sans-serif;font-weight:800;font-size:var(--h-sec);line-height:.94;letter-spacing:-.03em;color:#f0ebe2;max-width:16ch;}
+[data-theme="dark"] .sys-h2{color:var(--text);}
+.sys-h2 em{font-style:italic;font-family:'Instrument Serif',Georgia,serif;font-weight:400;color:var(--orange);font-size:1.05em;}
+.sys-sub{font-size:var(--body);line-height:1.75;color:rgba(240,235,226,.6);max-width:52ch;margin-top:1.2rem;}
+[data-theme="dark"] .sys-sub{color:var(--text-2);}
+.sys-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(240,235,226,.1);margin-top:clamp(2rem,3.5vw,3rem);}
+[data-theme="dark"] .sys-grid{background:var(--border);}
+.sys-cell{background:#1d1b17;padding:clamp(1.3rem,2.2vw,1.8rem);}
+[data-theme="dark"] .sys-cell{background:var(--bg-alt);}
+.sys-k{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--orange);margin-bottom:.7rem;}
+.sys-t{font-family:'Instrument Sans',sans-serif;font-weight:600;font-size:1rem;color:#f0ebe2;margin-bottom:.5rem;}
+[data-theme="dark"] .sys-t{color:var(--text);}
+.sys-b{font-size:var(--small);line-height:1.65;color:rgba(240,235,226,.55);}
+[data-theme="dark"] .sys-b{color:var(--text-2);}
+.sys-count{font-family:'Instrument Sans',sans-serif;font-weight:700;font-size:clamp(1.8rem,3vw,2.6rem);color:var(--orange);letter-spacing:-.03em;line-height:1;margin:.2rem 0 .3rem;}
+/* EVIDENCE */
+.evi{background:var(--bg);}
+.evi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);margin-top:clamp(1.5rem,2.5vw,2.5rem);}
+.evi-cell{background:var(--bg);padding:clamp(1.3rem,2.1vw,1.9rem);}
+.evi-k{font-family:'DM Mono',monospace;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--orange);margin-bottom:.6rem;}
+.evi-b{font-size:var(--small);line-height:1.6;color:var(--text-2);}
+.evi-b b{color:var(--text);font-weight:600;}
+/* CTA */
+.cta{background:var(--bg-alt);text-align:center;padding:clamp(72px,10vw,120px) var(--pad-x);}
+.cta-bar{width:1px;height:60px;background:var(--border-2);margin:0 auto 3rem;}
+.cta-h2{font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.2rem,5.5vw,5rem);line-height:.92;letter-spacing:-.04em;margin-bottom:1.6rem;}
+.cta-h2 em{font-style:italic;font-family:'Instrument Serif',Georgia,serif;font-weight:400;color:var(--orange);font-size:1.06em;}
+.cta-sub{font-size:var(--body);line-height:1.7;color:var(--text-2);max-width:48ch;margin:0 auto 2.8rem;}
+.cta-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;}
+.cta-note{margin-top:2.2rem;font-family:'DM Mono',monospace;font-size:10.5px;letter-spacing:.12em;color:var(--text-3);}
+footer{padding:clamp(1.25rem,2vw,1.8rem) var(--pad-x);border-top:.5px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;}
+.f-mark{font-family:'Instrument Sans',sans-serif;font-weight:700;font-size:1rem;letter-spacing:-.02em;}
+.f-mark b{color:var(--orange);}
+.f-note{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:.1em;color:var(--text-3);text-transform:uppercase;}
+:focus-visible{outline:2px solid var(--orange);outline-offset:3px;}
+.progress{position:fixed;top:56px;left:0;height:2px;width:0;background:var(--orange);z-index:101;will-change:width;}
+nav.scrolled{border-bottom-color:var(--border-2);}
+.brief-q{transition:color .2s,padding-left .25s;}
+.brief-q:hover{padding-left:.4rem;}
+.evi-cell{transition:background .3s,transform .3s;}
+.evi-cell:hover{background:var(--orange-d);transform:translateY(-3px);}
+.sys-cell{transition:background .3s,transform .3s;}
+.sys-cell:hover{transform:translateY(-3px);}
+.road-row:hover{border-color:var(--border-2);}
+.hero-inner{will-change:transform,opacity;}
+.fu{opacity:0;transform:translateY(22px) scale(.992);transition:opacity .65s cubic-bezier(.2,.7,.2,1),transform .65s cubic-bezier(.2,.7,.2,1);}
+.fu.in{opacity:1;transform:none;}
+.brief-item.fu{transition:opacity .6s ease,transform .6s ease,padding-left .25s;}
+.brief-list .brief-item:nth-child(2){transition-delay:.05s}
+.brief-list .brief-item:nth-child(3){transition-delay:.10s}
+.brief-list .brief-item:nth-child(4){transition-delay:.15s}
+.brief-list .brief-item:nth-child(5){transition-delay:.20s}
+.brief-list .brief-item:nth-child(6){transition-delay:.25s}
+.brief-list .brief-item:nth-child(7){transition-delay:.30s}
+@media(max-width:860px){
+  .two-col{grid-template-columns:1fr;gap:2rem;}
+  .sys-grid,.evi-grid{grid-template-columns:1fr 1fr;}
+  .nav-for{display:none;}
+  .road-row{grid-template-columns:26px 1fr 30%;}
+}
+@media(max-width:520px){
+  :root{--pad-x:1.25rem;}
+  .sys-grid,.evi-grid{grid-template-columns:1fr;}
+  .btn{flex:1;justify-content:center;}
+  .brief-q{grid-template-columns:1fr auto;}
+  .brief-tag{grid-column:1;grid-row:1;}
+  .brief-req{grid-column:1;}
+  .brief-a-inner,.brief-a-body,.brief-proof{grid-column:1;display:block;}
+  .road-row{grid-template-columns:24px 1fr;}
+  .road-barwrap{grid-column:2;margin-top:.4rem;}
+}
+@media(prefers-reduced-motion:reduce){.fu{opacity:1;transform:none;transition:none;}.road-row,.road-bar{transition:none;}.hero-inner{transform:none!important;opacity:1!important;}*{transition-duration:.01ms!important;}}
+</style>
+<noscript><style>.fu{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body data-theme="light">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9KQJZZB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<nav>
+  <a href="#top" class="nav-logo">Vinay Raja<b>.</b></a>
+  <div class="nav-right">
+    <span class="nav-for">For Schneider Electric</span>
+    <a href="VinayRaja_SchneiderResume2026.pdf" download class="nav-cta" data-ev="cv_download">Download CV</a>
+    <button class="tbtn" id="tbtn" aria-label="Toggle dark mode" type="button">&#9680;</button>
+  </div>
+</nav>
+<div class="progress" id="progress"></div>
+
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <p class="hero-tag fu">Web Product Experience Lead · Ref 123199</p>
+    <h1 class="hero-h1 fu" style="transition-delay:.06s;">This page is the <em>work sample.</em></h1>
+    <p class="hero-sub fu" style="transition-delay:.14s;">You are hiring someone to own web and digital experience across a multi-brand estate. So rather than describe the craft, this page demonstrates it. Your brief, answered against named proof. A live roadmap you can re-prioritise yourself. And a page built the way I would build yours: on a design system, componentised, instrumented and governed.</p>
+    <div class="hero-ctas fu" style="transition-delay:.2s;">
+      <a href="VinayRaja_SchneiderResume2026.pdf" download class="btn btn-p" data-ev="cv_download">Download CV</a>
+      <a href="#brief" class="btn btn-s">See the brief, answered</a>
+    </div>
+  </div>
+</header>
+
+<section id="brief">
+  <div class="s-label" data-n="01 –">The brief, answered</div>
+  <p class="brief-intro fu">Every line below is taken from your job description. Open each to see the specific, named work behind it, not a claim.</p>
+  <div class="brief-list" id="briefList">
+
+    <div class="brief-item fu">
+      <button class="brief-q" data-item="roadmap"><span class="brief-tag">Responsibility</span><span class="brief-req">Own and prioritise the web and digital roadmap across multiple brands</span><span class="brief-plus">+</span></button>
+      <div class="brief-a"><div class="brief-a-inner">
+        <p class="brief-a-body">At AVJennings I owned and prioritised the digital and web roadmap across the corporate site and a portfolio of project brand sites, balancing transformation against the business-as-usual delivery the brands relied on. <b>The interactive roadmap in the next section is that exact judgment, made playable.</b></p>
+        <p class="brief-proof">Proof · <span>7 years, AVJennings ANZ · corporate + project brand sites</span></p>
+      </div></div>
+    </div>
+
+    <div class="brief-item fu">
+      <button class="brief-q" data-item="marketing"><span class="brief-tag">Core of the role</span><span class="brief-req">Translate marketing strategy into scalable digital capability</span><span class="brief-plus">+</span></button>
+      <div class="brief-a"><div class="brief-a-inner">
+        <p class="brief-a-body">As a <b>Certified Marketing Professional</b> with a design and product background, I connect what marketing needs to what a platform can deliver. I modernised acquisition and consideration journeys, embedded martech, GA4 and behavioural analytics, and tied delivery to funnel KPIs rather than activity.</p>
+        <p class="brief-proof">Proof · <span>CPM, Australian Marketing Institute · 60% faster speed to market</span></p>
+      </div></div>
+    </div>
+
+    <div class="brief-item fu">
+      <button class="brief-q" data-item="cms"><span class="brief-tag">Highly regarded</span><span class="brief-req">Deliver CMS upgrades, migrations or modernisation programs</span><span class="brief-plus">+</span></button>
+      <div class="brief-a"><div class="brief-a-inner">
+        <p class="brief-a-body">I led the redesign and migration from a legacy <b>Sitecore</b> CMS to a modern <b>headless architecture on Storyblok</b>, end to end, with performance, editorial autonomy and speed to market all improving on the far side. This is the CMS modernisation your brief lists as highly regarded, delivered.</p>
+        <p class="brief-proof">Proof · <span>Sitecore to headless Storyblok · full re-platform</span></p>
+      </div></div>
+    </div>
+
+    <div class="brief-item fu">
+      <button class="brief-q" data-item="team"><span class="brief-tag">Leadership</span><span class="brief-req">Lead a team and embed agile ways of working</span><span class="brief-plus">+</span></button>
+      <div class="brief-a"><div class="brief-a-inner">
+        <p class="brief-a-body">I built and led a multidisciplinary team across UX, design, content and digital marketing, embedding agile ways of working. As Head of Creative Services for Asia Pacific at PageGroup, I led delivery across multiple brands and markets for a multinational enterprise.</p>
+        <p class="brief-proof">Proof · <span>AVJennings team · PageGroup APAC, multi-market</span></p>
+      </div></div>
+    </div>
+
+    <div class="brief-item fu">
+      <button class="brief-q" data-item="stakeholders"><span class="brief-tag">Partnership</span><span class="brief-req">Partner across marketing, sales, CX, IT, data and global dev teams</span><span class="brief-plus">+</span></button>
+      <div class="brief-a"><div class="brief-a-inner">
+        <p class="brief-a-body">My work sits at the seams between functions. At AVJennings I aligned marketing, sales, IT and external development partners around one investment case. At Plasmatic I collaborate directly with engineers and architects on platform direction, as CDO and board member.</p>
+        <p class="brief-proof">Proof · <span>Cross-functional delivery · engineering collaboration, Plasmatic</span></p>
+      </div></div>
+    </div>
+
+    <div class="brief-item fu">
+      <button class="brief-q" data-item="ai"><span class="brief-tag">Future focus</span><span class="brief-req">Champion AI-enabled capabilities and digital innovation</span><span class="brief-plus">+</span></button>
+      <div class="brief-a"><div class="brief-a-inner">
+        <p class="brief-a-body">I introduced AI-assisted content and production workflows into a live marketing operation, to lift throughput and consistency, not as a demo. I bring a practical view of where AI genuinely improves customer experience and where it does not yet earn its place.</p>
+        <p class="brief-proof">Proof · <span>AI-assisted content workflows, in production</span></p>
+      </div></div>
+    </div>
+
+    <div class="brief-item fu">
+      <button class="brief-q" data-item="governance"><span class="brief-tag">Rigour</span><span class="brief-req">Manage governance, operational readiness, risk and compliance</span><span class="brief-plus">+</span></button>
+      <div class="brief-a"><div class="brief-a-inner">
+        <p class="brief-a-body">I established digital governance covering content standards, accessibility to WCAG, SEO and brand consistency across brands and stakeholder groups. Governance is what keeps a multi-brand estate coherent as it scales. This page is governed the same way, as the next section shows.</p>
+        <p class="brief-proof">Proof · <span>Governance frameworks · WCAG · brand consistency at scale</span></p>
+      </div></div>
+    </div>
+
+  </div>
+</section>
+
+<section class="road" id="roadmap">
+  <div class="s-label" data-n="02 –">Roadmap ownership, demonstrated</div>
+  <div class="two-col">
+    <h2 class="sec-h2 fu">The judgment<br>the role asks for,<br><em>made playable.</em></h2>
+    <p class="sec-body fu" style="transition-delay:.1s;">Owning a multi-brand roadmap is a constant act of balance: transformation that moves the estate forward, against the business-as-usual delivery the brands depend on today. Move the balance below and watch the roadmap re-prioritise. There is no single right answer, and that is the point. This is the trade-off I would be making with your teams, week to week.</p>
+  </div>
+  <div class="road-frame fu">
+    <div class="road-head">
+      <div class="road-poles">Balance the estate: <b>business as usual</b> to <b>transformation</b></div>
+    </div>
+    <input type="range" min="0" max="100" value="55" class="road-slider" id="roadSlider" aria-label="Balance the roadmap between business as usual and transformation">
+    <div class="road-scale"><span>Keep the lights on</span><span>Transform the estate</span></div>
+    <div class="road-list" id="roadList"></div>
+    <p class="road-note" id="roadNote">Priority recalculated live · drag to re-sequence</p>
+  </div>
+</section>
+
+<section class="sys" id="system">
+  <div class="s-label" data-n="03 –">How this page is built</div>
+  <div class="two-col">
+    <h2 class="sys-h2 fu">The page is<br>the <em>proof.</em></h2>
+    <p class="sys-sub fu" style="transition-delay:.1s;">You are hiring someone to own web experience, so this page is built the way I would build yours. Not a template. A small product, made with the same discipline the role requires.</p>
+  </div>
+  <div class="sys-grid">
+    <div class="sys-cell fu"><div class="sys-k">Design system</div><div class="sys-t">Tokenised, not hardcoded</div><div class="sys-b">Colour, type and spacing run on design tokens with a single source of truth. Dark mode included, switchable in the nav.</div></div>
+    <div class="sys-cell fu" style="transition-delay:.04s;"><div class="sys-k">Componentised</div><div class="sys-t">Composable sections</div><div class="sys-b">Modular blocks, not a monolith. The same structural thinking a headless CMS rewards.</div></div>
+    <div class="sys-cell fu" style="transition-delay:.08s;"><div class="sys-k">Instrumented</div><div class="sys-count" id="evCount">0</div><div class="sys-b">Interactions captured this session. Every meaningful action is measured through GTM, with named events ready for GA4. Yours would be too.</div></div>
+    <div class="sys-cell fu" style="transition-delay:.12s;"><div class="sys-k">Accessible</div><div class="sys-t">WCAG-considered</div><div class="sys-b">Visible focus states, reduced-motion support, semantic structure and a skip-worthy reading order.</div></div>
+    <div class="sys-cell fu" style="transition-delay:.16s;"><div class="sys-k">Governed</div><div class="sys-t">Private by design</div><div class="sys-b">Set to noindex. A per-audience page, not public spray. Governance built in, not bolted on.</div></div>
+    <div class="sys-cell fu" style="transition-delay:.2s;"><div class="sys-k">Performant</div><div class="sys-t">Lean by default</div><div class="sys-b">One type family, no framework bloat, no heavy dependencies. Fast on any connection.</div></div>
+  </div>
+</section>
+
+<section class="evi" id="evidence">
+  <div class="s-label" data-n="04 –">The evidence</div>
+  <div class="two-col">
+    <h2 class="sec-h2 fu">Named proof,<br>not <em>adjectives.</em></h2>
+    <p class="sec-body fu" style="transition-delay:.1s;">Fifteen years of brand, marketing and digital experience, with the credential and platform depth this role specifically asks for. The specifics, on the record.</p>
+  </div>
+  <div class="evi-grid">
+    <div class="evi-cell fu"><div class="evi-k">Credential</div><div class="evi-b"><b>Certified Marketing Professional (CPM)</b>, Australian Marketing Institute</div></div>
+    <div class="evi-cell fu" style="transition-delay:.03s;"><div class="evi-k">Migration</div><div class="evi-b"><b>Sitecore to headless Storyblok</b>, re-platform delivered end to end</div></div>
+    <div class="evi-cell fu" style="transition-delay:.06s;"><div class="evi-k">Award</div><div class="evi-b"><b>Best Property Website</b>, International Property Awards</div></div>
+    <div class="evi-cell fu" style="transition-delay:.09s;"><div class="evi-k">Award</div><div class="evi-b"><b>Best Community Branding</b>, Brandie Award</div></div>
+    <div class="evi-cell fu" style="transition-delay:.12s;"><div class="evi-k">Platforms</div><div class="evi-b"><b>Salary &amp; Employment Outlook</b> and <b>Future of Work</b>, PageGroup APAC, across markets</div></div>
+    <div class="evi-cell fu" style="transition-delay:.15s;"><div class="evi-k">Tenure</div><div class="evi-b"><b>7 years</b> as Creative &amp; Digital Experience Director, AVJennings (ANZ)</div></div>
+    <div class="evi-cell fu" style="transition-delay:.18s;"><div class="evi-k">Study</div><div class="evi-b"><b>Postgraduate Diploma</b>, Innovation &amp; Design Thinking, MIT</div></div>
+    <div class="evi-cell fu" style="transition-delay:.21s;"><div class="evi-k">Venture</div><div class="evi-b"><b>USD 50,000 seed</b>, Start-Up Chile, co-founded Infigo</div></div>
+    <div class="evi-cell fu" style="transition-delay:.24s;"><div class="evi-k">Speed</div><div class="evi-b"><b>60% faster speed to market</b> from the in-house function at AVJennings</div></div>
+  </div>
+</section>
+
+<section class="cta" id="cta">
+  <div class="cta-bar"></div>
+  <div class="s-label" style="justify-content:center;" data-n="">Next step</div>
+  <h2 class="cta-h2 fu">Let's talk about<br>the <em>estate.</em></h2>
+  <p class="cta-sub fu" style="transition-delay:.08s;">If this resonates and you would like to go deeper on any of it, I would welcome a conversation. Sydney based, full working rights in Australia.</p>
+  <div class="cta-actions fu" style="transition-delay:.14s;">
+    <a href="mailto:vinayraja@gmail.com?subject=Web%20Product%20Experience%20Lead%20(Ref%20123199)%20a%20conversation" class="btn btn-p" data-ev="start_conversation">Start a conversation</a>
+    <a href="VinayRaja_SchneiderResume2026.pdf" download class="btn btn-s" data-ev="cv_download">Download CV</a>
+    <a href="tel:+61431188899" class="btn btn-s" data-ev="call_click">Call</a>
+  </div>
+  <p class="cta-note fu" style="transition-delay:.2s;">vinayraja@gmail.com · +61 431 188 899</p>
+</section>
+
+<footer>
+  <div class="f-mark">Vinay Raja<b>.</b></div>
+  <div class="f-note">For Schneider Electric · Web Product Experience Lead · Prepared with AI assistance</div>
+</footer>
+
+<script>
+  window.dataLayer=window.dataLayer||[];
+  var body=document.body,btn=document.getElementById('tbtn');
+  var saved=localStorage.getItem('vr-theme');
+  var sys=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+  body.setAttribute('data-theme',saved||sys);
+
+  // interaction counter
+  var count=0, evEl=document.getElementById('evCount');
+  function bump(){count++; if(evEl) evEl.textContent=count;}
+
+  btn.addEventListener('click',function(){
+    var next=body.getAttribute('data-theme')==='dark'?'light':'dark';
+    body.setAttribute('data-theme',next);localStorage.setItem('vr-theme',next);bump();
+  });
+
+  var obs=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(e.isIntersecting){e.target.classList.add('in');obs.unobserve(e.target);}});},{threshold:.09});
+  document.querySelectorAll('.fu').forEach(function(el){obs.observe(el);});
+
+  // scroll motion: progress bar, nav state, light hero drift
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var prog=document.getElementById('progress');
+  var navEl=document.querySelector('nav');
+  var heroInner=document.querySelector('.hero-inner');
+  var ticking=false;
+  function onScroll(){
+    var y=window.scrollY||window.pageYOffset||0;
+    var docH=document.documentElement.scrollHeight-window.innerHeight;
+    if(prog) prog.style.width=(docH>0?Math.min(100,y/docH*100):0)+'%';
+    if(navEl) navEl.classList.toggle('scrolled', y>20);
+    if(!reduce && heroInner){
+      var vh=window.innerHeight;
+      if(y<vh){ heroInner.style.transform='translateY('+(y*0.18)+'px)';
+        heroInner.style.opacity=String(Math.max(0,1-y/(vh*0.85))); }
+    }
+    ticking=false;
+  }
+  window.addEventListener('scroll',function(){ if(!ticking){requestAnimationFrame(onScroll);ticking=true;} },{passive:true});
+  window.addEventListener('resize',function(){ if(!ticking){requestAnimationFrame(onScroll);ticking=true;} },{passive:true});
+  onScroll();
+
+  // brief accordion
+  var opened={};
+  document.querySelectorAll('.brief-q').forEach(function(q){
+    q.addEventListener('click',function(){
+      var item=q.parentElement,key=q.getAttribute('data-item');
+      var isOpen=item.classList.toggle('open'); bump();
+      if(isOpen&&!opened[key]){opened[key]=true;
+        window.dataLayer.push({event:'brief_answered',campaign:'schneider',brief_item:key});}
+    });
+  });
+
+  // conversion events
+  document.querySelectorAll('[data-ev]').forEach(function(a){
+    a.addEventListener('click',function(){
+      window.dataLayer.push({event:a.getAttribute('data-ev'),campaign:'schneider'});
+    });
+  });
+
+  // ROADMAP prioritiser
+  var initiatives=[
+    {id:'cms', name:'Re-platform legacy CMS to headless', tag:'Transformation · delivered', done:true, t:1.00, b:0.15},
+    {id:'pers',name:'Personalisation & martech integration', tag:'Transformation', t:0.90, b:0.20},
+    {id:'ai',  name:'AI-assisted content workflow rollout', tag:'Transformation', t:0.85, b:0.25},
+    {id:'ga4', name:'GA4 & funnel KPI instrumentation', tag:'Measurement', t:0.60, b:0.55},
+    {id:'gov', name:'Brand-consistency governance across sites', tag:'Governance', t:0.45, b:0.70},
+    {id:'a11y',name:'Accessibility (WCAG) remediation', tag:'Governance', t:0.35, b:0.80},
+    {id:'camp',name:'Seasonal campaign & launch pages', tag:'Business as usual', t:0.20, b:0.95},
+    {id:'pub', name:'BAU publishing & editorial support', tag:'Business as usual', t:0.10, b:1.00}
+  ];
+  var listEl=document.getElementById('roadList');
+  var slider=document.getElementById('roadSlider');
+  initiatives.forEach(function(it){
+    var row=document.createElement('div'); row.className='road-row';
+    row.innerHTML='<div class="road-rank"></div>'+
+      '<div class="road-main"><div class="road-name">'+it.name+'</div>'+
+      '<div class="road-meta '+(it.done?'done':'')+'">'+it.tag+'</div></div>'+
+      '<div class="road-barwrap"><div class="road-bar"></div></div>';
+    it.el=row; listEl.appendChild(row);
+  });
+  var lastOrder='', roadFired=false;
+  function renderRoad(){
+    var s=parseInt(slider.value,10)/100;
+    initiatives.forEach(function(it){ it.score=it.t*s + it.b*(1-s); });
+    var ordered=initiatives.slice().sort(function(a,b){return b.score-a.score;});
+    var max=Math.max.apply(null,ordered.map(function(i){return i.score;}));
+    var sig=ordered.map(function(i){return i.id;}).join(',');
+    // FLIP only when order changes
+    if(sig!==lastOrder){
+      var first={}; ordered.forEach(function(it){first[it.id]=it.el.getBoundingClientRect().top;});
+      ordered.forEach(function(it){ listEl.appendChild(it.el); });
+      ordered.forEach(function(it){
+        var dy=first[it.id]-it.el.getBoundingClientRect().top;
+        if(dy){ it.el.style.transition='none'; it.el.style.transform='translateY('+dy+'px)';
+          requestAnimationFrame(function(){ it.el.style.transition=''; it.el.style.transform=''; }); }
+      });
+      lastOrder=sig;
+    }
+    ordered.forEach(function(it,i){
+      it.el.querySelector('.road-rank').textContent=('0'+(i+1)).slice(-2);
+      it.el.querySelector('.road-bar').style.width=(it.score/max*100).toFixed(0)+'%';
+    });
+  }
+  slider.addEventListener('input',function(){
+    renderRoad(); 
+    if(!roadFired){roadFired=true;bump();window.dataLayer.push({event:'roadmap_explored',campaign:'schneider'});}
+  });
+  renderRoad();
+</script>
+</body>
+</html>
