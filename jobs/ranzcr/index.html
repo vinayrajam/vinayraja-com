@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K9KQJZZB');</script>
+<!-- End Google Tag Manager -->
+
+<title>Vinay Raja × RANZCR — Senior Manager, Digital Product Experience &amp; Data</title>
+<meta name="description" content="Vinay Raja for Senior Manager, Digital Product Experience &amp; Data at RANZCR. Fifteen years owning member and customer digital experience end to end, across the full lifecycle.">
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700;800&family=Instrument+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --bg:      #f4efe6;
+    --bg-alt:  #ede7db;
+    --text:    #111009;
+    --text-2:  #3a3730;
+    --text-3:  #7a746c;
+    --orange:  #bf5b25;
+    --orange-d:rgba(191,91,37,0.13);
+    --border:  rgba(17,16,9,0.1);
+    --border-2:rgba(17,16,9,0.18);
+    --nav-bg:  rgba(244,239,230,0.92);
+    --h-hero:  clamp(2.25rem, 7.4vw, 6.8rem);
+    --h-sec:   clamp(2.1rem, 4.3vw, 4.2rem);
+    --h-card:  clamp(0.95rem, 1.4vw, 1.05rem);
+    --body:    clamp(13px, 1.1vw, 15px);
+    --small:   clamp(11px, 0.9vw, 13px);
+    --pad-x:   max(1.5rem, 5vw);
+    --col-gap: clamp(2rem, 4vw, 5rem);
+  }
+  [data-theme="dark"] {
+    --bg:      #0e0d0a;
+    --bg-alt:  #161410;
+    --text:    #ede8df;
+    --text-2:  #bdb7ae;
+    --text-3:  #706a62;
+    --border:  rgba(237,232,223,0.09);
+    --border-2:rgba(237,232,223,0.17);
+    --nav-bg:  rgba(14,13,10,0.92);
+    --orange-d:rgba(191,91,37,0.16);
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; font-size: 16px; }
+  body {
+    font-family: 'Instrument Sans', sans-serif;
+    background: var(--bg); color: var(--text);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    transition: background 0.35s, color 0.35s;
+    line-height: 1.6;
+  }
+  a { color: inherit; }
+
+  /* NAV */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    height: 58px; background: var(--nav-bg);
+    backdrop-filter: blur(14px);
+    border-bottom: 0.5px solid var(--border);
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 var(--pad-x);
+    transition: background 0.35s;
+  }
+  .nav-logo {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--text); text-decoration: none;
+  }
+  .nav-logo b { color: var(--orange); font-weight: 400; }
+  .nav-links { display: flex; align-items: center; gap: clamp(1rem, 2.5vw, 2.2rem); }
+  .nav-link {
+    font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--text-3); text-decoration: none; transition: color 0.2s; white-space: nowrap;
+  }
+  .nav-link:hover { color: var(--text); }
+  .nav-hide-sm { display: flex; }
+  .tbtn {
+    background: none; border: 0.5px solid var(--border-2);
+    width: 30px; height: 30px; border-radius: 50%; flex-shrink: 0;
+    cursor: pointer; display: flex; align-items: center; justify-content: center;
+    font-size: 13px; color: var(--text-3); transition: border-color 0.2s, color 0.2s;
+  }
+  .tbtn:hover { border-color: var(--orange); color: var(--orange); }
+
+  /* HERO */
+  .hero {
+    padding-top: 58px;
+    min-height: 100svh;
+    display: flex; flex-direction: column; justify-content: flex-start;
+    overflow: hidden; position: relative;
+  }
+  .hero-inner {
+    padding: clamp(2rem, 4vw, 3.5rem) var(--pad-x) clamp(4rem, 7vw, 6rem);
+    flex: 1; display: flex; flex-direction: column; justify-content: center;
+  }
+  .hero-top {
+    display: flex; justify-content: space-between; align-items: flex-start;
+    gap: 1.5rem; flex-wrap: wrap;
+  }
+  .hero-tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--orange); display: flex; align-items: center; gap: 0.8rem; max-width: 60ch;
+  }
+  .hero-tag::after { content: ''; display: block; width: 32px; height: 0.5px; background: var(--orange); flex-shrink: 0; }
+  .hero-meta {
+    font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+    color: var(--text-3); text-align: right; line-height: 1.7;
+  }
+  .hero-h1 {
+    font-family: 'Syne', sans-serif; font-weight: 800;
+    font-size: var(--h-hero);
+    line-height: 0.92; letter-spacing: -0.04em; color: var(--text);
+    margin-top: clamp(1rem, 1.8vw, 1.6rem);
+  }
+  .hero-h1 .hi { color: var(--orange); }
+  .hero-body {
+    display: grid; grid-template-columns: 1.15fr 1fr;
+    gap: var(--col-gap); align-items: start;
+    border-top: 0.5px solid var(--border);
+    margin-top: clamp(1rem, 1.8vw, 1.6rem);
+    padding-top: clamp(1.25rem, 2vw, 1.75rem);
+    padding-bottom: clamp(2rem, 3vw, 2.5rem);
+  }
+  .hero-desc { font-size: var(--body); font-weight: 300; line-height: 1.8; color: var(--text-2); }
+  .hero-desc em { font-style: italic; font-family: 'Instrument Serif', Georgia, serif; color: var(--orange); font-size: 1.08em; }
+  .hero-right { display: flex; flex-direction: column; align-items: flex-end; gap: 1.1rem; }
+  .hero-cta {
+    font-family: 'Syne', sans-serif; font-weight: 700;
+    font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--bg); background: var(--text);
+    text-decoration: none; padding: 15px 30px;
+    display: inline-flex; align-items: center; gap: 0.75rem;
+    transition: background 0.25s; white-space: nowrap;
+  }
+  .hero-cta::after { content: '↓'; transition: transform 0.2s; }
+  .hero-cta:hover { background: var(--orange); }
+  .hero-cta:hover::after { transform: translateY(3px); }
+  .hero-sub-actions { display: flex; gap: 1.25rem; align-items: center; }
+  .hero-mini {
+    font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--text-3); text-decoration: none;
+    border-bottom: 0.5px solid var(--border-2); padding-bottom: 2px; transition: color 0.2s, border-color 0.2s;
+  }
+  .hero-mini:hover { color: var(--orange); border-color: var(--orange); }
+  .hero-note {
+    font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em;
+    text-transform: uppercase; color: var(--text-3); text-align: right; line-height: 1.7;
+  }
+
+  /* SCROLL INDICATOR */
+  .scroll-indicator {
+    position: absolute; left: var(--pad-x); bottom: clamp(1.5rem, 2.5vw, 2rem);
+    display: flex; align-items: center; gap: 1rem; opacity: 1; transition: opacity 0.5s ease;
+  }
+  .scroll-indicator.hidden { opacity: 0; pointer-events: none; }
+  .scroll-line { position: relative; width: 1px; height: 48px; background: var(--border-2); overflow: hidden; flex-shrink: 0; }
+  .scroll-line::after {
+    content: ''; position: absolute; top: -40%; left: 0; width: 100%; height: 40%;
+    background: var(--orange); animation: scrollDot 1.6s cubic-bezier(0.4,0,0.6,1) infinite;
+  }
+  @keyframes scrollDot { 0% { top: -40%; } 100% { top: 140%; } }
+  .scroll-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-3); }
+
+  /* SECTIONS */
+  section { padding: clamp(60px, 9vw, 110px) var(--pad-x); }
+  .s-label {
+    font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.25em;
+    text-transform: uppercase; color: var(--orange); margin-bottom: clamp(2rem, 3.5vw, 3.5rem);
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  .s-label::before { content: attr(data-n); color: var(--text-3); }
+  .sec-h2 { font-family: 'Syne', sans-serif; font-weight: 800; font-size: var(--h-sec); line-height: 0.93; letter-spacing: -0.03em; color: var(--text); }
+  .sec-h2 em { font-style: italic; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; color: var(--orange); font-size: 1.06em; letter-spacing: -0.02em; }
+  .sec-h2 .outline-sm { -webkit-text-stroke: 1.2px var(--text); color: transparent; }
+  .sec-body { font-size: var(--body); font-weight: 300; line-height: 1.8; color: var(--text-2); }
+  .two-col-intro { display: grid; grid-template-columns: 1fr 1fr; gap: var(--col-gap); align-items: end; margin-bottom: clamp(2.5rem, 4vw, 5rem); }
+
+  /* FIT */
+  .fit { background: var(--bg-alt); }
+  .fit-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--border); }
+  .fit-card { background: var(--bg); padding: clamp(1.5rem, 2.5vw, 2.4rem); transition: background 0.25s; }
+  .fit-card:hover { background: var(--orange-d); }
+  .fc-req { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--orange); margin-bottom: 1rem; }
+  .fc-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: var(--h-card); letter-spacing: -0.01em; color: var(--text); margin-bottom: 0.75rem; line-height: 1.25; }
+  .fc-body { font-size: var(--small); font-weight: 300; line-height: 1.75; color: var(--text-2); }
+
+  /* LIFECYCLE */
+  .lifecycle { background: var(--bg); }
+  .lc-shell { display: grid; grid-template-columns: 260px 1fr; gap: clamp(1.5rem, 3vw, 3.5rem); align-items: start; }
+  .lc-stages { display: flex; flex-direction: column; border-top: 0.5px solid var(--border); }
+  .lc-stage {
+    display: grid; grid-template-columns: 40px 1fr; gap: 0.9rem; align-items: baseline;
+    padding: 1.05rem 0.5rem; border-bottom: 0.5px solid var(--border);
+    cursor: pointer; text-align: left; background: none; border-left: none; border-right: none; border-top: none;
+    width: 100%; transition: padding-left 0.2s, background 0.2s;
+  }
+  .lc-stage:hover { padding-left: 0.9rem; }
+  .lc-stage.active { background: var(--orange-d); padding-left: 0.9rem; }
+  .lc-stage-n { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: var(--text-3); }
+  .lc-stage.active .lc-stage-n { color: var(--orange); }
+  .lc-stage-name { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.95rem; letter-spacing: -0.01em; color: var(--text); line-height: 1.2; }
+  .lc-stage.active .lc-stage-name { color: var(--orange); }
+  .lc-detail { min-height: 320px; }
+  .lc-detail-tag { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--orange); margin-bottom: 1.25rem; }
+  .lc-detail-h { font-family: 'Syne', sans-serif; font-weight: 800; font-size: clamp(1.6rem, 3vw, 2.6rem); line-height: 1; letter-spacing: -0.03em; color: var(--text); margin-bottom: 1.75rem; }
+  .lc-block { margin-bottom: 1.6rem; }
+  .lc-block-label { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-3); margin-bottom: 0.6rem; }
+  .lc-block-body { font-size: var(--body); font-weight: 300; line-height: 1.8; color: var(--text-2); }
+  .lc-block.bring { border-left: 2px solid var(--orange); padding-left: 1.25rem; }
+  .lc-block.bring .lc-block-label { color: var(--orange); }
+
+  /* APPROACH */
+  .approach { background: var(--bg-alt); }
+  .ap-rows { display: flex; flex-direction: column; }
+  .ap-row { display: grid; grid-template-columns: 48px 1fr 1fr; gap: clamp(1.25rem, 2.5vw, 2.5rem); align-items: start; padding: clamp(1.5rem, 2.5vw, 2.2rem) 0; border-top: 0.5px solid var(--border); transition: padding-left 0.25s; }
+  .ap-row:last-child { border-bottom: 0.5px solid var(--border); }
+  .ap-row:hover { padding-left: 0.75rem; }
+  .ap-idx { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.15em; color: var(--text-3); padding-top: 4px; }
+  .ap-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: var(--h-card); letter-spacing: -0.01em; line-height: 1.25; color: var(--text); }
+  .ap-proof { font-size: var(--small); font-weight: 300; line-height: 1.75; color: var(--text-2); }
+  .ap-proof b { font-weight: 500; color: var(--text); }
+
+  /* HONEST */
+  .honest { background: #1d1b17; position: relative; overflow: hidden; }
+  [data-theme="dark"] .honest { background: #0a0908; border-top: 0.5px solid var(--border); }
+  .honest .s-label { color: var(--orange); }
+  .honest-grid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--col-gap); position: relative; z-index: 1; }
+  .honest-h2 { font-family: 'Syne', sans-serif; font-weight: 800; font-size: clamp(2.2rem, 4.6vw, 4.2rem); line-height: 0.92; letter-spacing: -0.04em; color: #f0ebe2; }
+  [data-theme="dark"] .honest-h2 { color: var(--text); }
+  .honest-h2 em { font-style: italic; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; color: var(--orange); font-size: 1.05em; }
+  .honest-intro { font-size: var(--small); font-weight: 300; line-height: 1.8; color: rgba(240,235,226,0.6); margin-top: 1.5rem; max-width: 42ch; }
+  [data-theme="dark"] .honest-intro { color: var(--text-2); }
+  .honest-list { display: flex; flex-direction: column; }
+  .honest-item { padding: 1.4rem 0; border-top: 0.5px solid rgba(240,235,226,0.1); }
+  [data-theme="dark"] .honest-item { border-color: var(--border); }
+  .honest-item:last-child { border-bottom: 0.5px solid rgba(240,235,226,0.1); }
+  .honest-gap { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1rem; letter-spacing: -0.01em; color: #f0ebe2; margin-bottom: 0.65rem; display: flex; align-items: baseline; gap: 0.6rem; }
+  [data-theme="dark"] .honest-gap { color: var(--text); }
+  .honest-gap::before { content: '—'; color: var(--orange); }
+  .honest-reframe { font-size: var(--small); font-weight: 300; line-height: 1.8; color: rgba(240,235,226,0.62); }
+  [data-theme="dark"] .honest-reframe { color: var(--text-2); }
+
+  /* CREDS */
+  .creds { background: var(--bg); }
+  .creds-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 0.5px solid var(--border); }
+  .cred { background: var(--bg); padding: clamp(1.4rem, 2.2vw, 2rem); }
+  .cred-k { font-family: 'DM Mono', monospace; font-size: 9px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-3); margin-bottom: 0.7rem; }
+  .cred-v { font-family: 'Syne', sans-serif; font-weight: 700; font-size: clamp(0.95rem, 1.5vw, 1.1rem); letter-spacing: -0.01em; color: var(--text); line-height: 1.2; }
+  .cred.hero-cred .cred-v { color: var(--orange); }
+  .cred-sub { font-size: var(--small); font-weight: 300; color: var(--text-2); margin-top: 0.5rem; line-height: 1.5; }
+
+  /* CONTACT */
+  .contact { background: var(--bg-alt); text-align: center; padding: clamp(80px, 12vw, 130px) var(--pad-x); }
+  .contact-bar { width: 1px; height: 64px; background: var(--border-2); margin: 0 auto 3.5rem; }
+  .contact-h2 { font-family: 'Syne', sans-serif; font-weight: 800; font-size: clamp(2.2rem, 6vw, 5.2rem); line-height: 0.9; letter-spacing: -0.04em; color: var(--text); margin-bottom: 1.75rem; }
+  .contact-h2 em { font-style: italic; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: 1.08em; color: var(--orange); }
+  .contact-sub { font-size: var(--body); font-weight: 300; line-height: 1.75; color: var(--text-2); max-width: 460px; margin: 0 auto 3rem; }
+  .contact-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+  .c-primary {
+    font-family: 'Syne', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--bg); background: var(--text); text-decoration: none;
+    display: inline-flex; align-items: center; gap: 0.75rem; padding: 16px 34px; transition: background 0.25s;
+  }
+  .c-primary::after { content: '↓'; }
+  .c-primary:hover { background: var(--orange); }
+  .c-secondary {
+    font-family: 'Syne', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--text); background: none; border: 0.5px solid var(--border-2); text-decoration: none;
+    display: inline-flex; align-items: center; gap: 0.75rem; padding: 16px 34px; transition: border-color 0.25s, color 0.25s;
+  }
+  .c-secondary:hover { border-color: var(--orange); color: var(--orange); }
+
+  /* FOOTER */
+  footer { padding: clamp(1.25rem, 2vw, 2rem) var(--pad-x); border-top: 0.5px solid var(--border); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; }
+  .footer-mark { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1rem; letter-spacing: -0.02em; color: var(--text); }
+  .footer-mark b { color: var(--orange); }
+  .footer-note { font-family: 'DM Mono', monospace; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-3); }
+
+  :focus-visible { outline: 2px solid var(--orange); outline-offset: 3px; }
+  .fu { opacity: 0; transform: translateY(22px); transition: opacity 0.65s ease, transform 0.65s ease; }
+  .fu.in { opacity: 1; transform: none; }
+
+  /* BREAKPOINTS */
+  @media (max-width: 1024px) {
+    .hero-body { grid-template-columns: 1fr 1fr; gap: 2.5rem; }
+    .lc-shell { grid-template-columns: 220px 1fr; }
+  }
+  @media (max-width: 860px) {
+    .hero-meta { display: none; }
+    .hero-body { grid-template-columns: 1fr; gap: 2rem; }
+    .hero-right { align-items: flex-start; }
+    .hero-note { text-align: left; }
+    .two-col-intro { grid-template-columns: 1fr; gap: 1.75rem; }
+    .fit-grid { grid-template-columns: 1fr 1fr; }
+    .lc-shell { grid-template-columns: 1fr; gap: 2rem; }
+    .lc-stages { display: grid; grid-template-columns: 1fr 1fr; border-top: none; }
+    .lc-stage { border-top: 0.5px solid var(--border); }
+    .ap-row { grid-template-columns: 30px 1fr; column-gap: 1rem; row-gap: 0.8rem; }
+    .ap-idx { grid-column: 1; grid-row: 1; }
+    .ap-title { grid-column: 2; grid-row: 1; }
+    .ap-proof { grid-column: 2; grid-row: 2; }
+    .honest-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    .creds-strip { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 560px) {
+    .fit-grid { grid-template-columns: 1fr; }
+    .lc-stages { grid-template-columns: 1fr; }
+    .nav-hide-sm { display: none; }
+    .scroll-indicator { display: none; }
+    .hero-inner { padding-bottom: clamp(2rem, 4vw, 3.5rem); }
+    .contact-actions { flex-direction: column; align-items: stretch; }
+    .c-primary, .c-secondary { justify-content: center; }
+  }
+  @media (max-width: 480px) {
+    :root { --pad-x: 1.25rem; }
+    .hero-cta { width: 100%; justify-content: center; }
+    .creds-strip { grid-template-columns: 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .fu { opacity: 1; transform: none; transition: none; }
+    .scroll-line::after { animation: none; }
+    * { transition-duration: 0.01ms !important; }
+  }
+</style>
+</head>
+<body data-theme="light">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9KQJZZB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<a href="#main" style="position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;z-index:999;background:var(--bg);color:var(--orange);padding:0.5rem 1rem;font-size:14px;" onfocus="this.style.left='1rem';this.style.width='auto';this.style.height='auto'" onblur="this.style.left='-9999px'">Skip to main content</a>
+
+<nav role="navigation" aria-label="Main navigation">
+  <a href="#top" class="nav-logo">Vinay Raja <b>×</b> RANZCR</a>
+  <div class="nav-links">
+    <a href="#fit" class="nav-link nav-hide-sm">The fit</a>
+    <a href="#lifecycle" class="nav-link nav-hide-sm">Lifecycle</a>
+    <a href="#approach" class="nav-link nav-hide-sm">Approach</a>
+    <a href="#honest" class="nav-link nav-hide-sm">The honest read</a>
+    <button class="tbtn" id="tbtn" aria-label="Toggle dark mode" type="button">◐</button>
+  </div>
+</nav>
+
+<main id="main">
+
+<header class="hero" id="top" role="banner">
+  <div class="hero-inner">
+    <div class="hero-top fu">
+      <p class="hero-tag">Application · Senior Manager, Digital Product Experience &amp; Data</p>
+      <p class="hero-meta" aria-hidden="true">RANZCR · Member Fulfilment Unit<br>Sydney, Australia</p>
+    </div>
+
+    <h1 class="hero-h1 fu" style="transition-delay:0.07s;" aria-label="Member experience, owned end to end.">
+      <span aria-hidden="true">Member</span><br>
+      <span aria-hidden="true">experience,</span><br>
+      <span class="hi" aria-hidden="true">owned end to end.</span>
+    </h1>
+
+    <div class="hero-body fu" style="transition-delay:0.17s;">
+      <p class="hero-desc">For fifteen years I've owned the problem this role describes: fragmented member and customer touchpoints turned into one coherent, data-led digital experience across the whole lifecycle. At AVJennings I built and led exactly that function. This is the same work, for a community whose purpose, <em>standards, education and patient care,</em> is worth serving.</p>
+      <div class="hero-right">
+        <a href="VinayRaja_RANZCR_Resume2026.pdf" class="hero-cta" id="cvHero" download>Download tailored CV</a>
+        <div class="hero-sub-actions">
+          <a href="mailto:vinayraja@gmail.com?subject=RANZCR%20%C2%B7%20Senior%20Manager%2C%20Digital%20Product%20Experience%20%26%20Data" class="hero-mini" id="convHero">Start a conversation</a>
+          <a href="tel:+61431188899" class="hero-mini" id="callHero">Call</a>
+        </div>
+        <p class="hero-note">Prepared specifically for<br>this role · July 2026</p>
+      </div>
+    </div>
+
+    <div class="scroll-indicator fu" id="scrollIndicator" style="transition-delay:0.3s;" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span class="scroll-label">Scroll</span>
+    </div>
+  </div>
+</header>
+
+<section class="fit" id="fit" aria-labelledby="fit-heading">
+  <div class="s-label" data-n="01 —">The fit</div>
+  <div class="two-col-intro">
+    <h2 class="sec-h2 fu" id="fit-heading">What the role<br>asks for, and<br>where I've <em>done it.</em></h2>
+    <p class="sec-body fu" style="transition-delay:0.1s;">The brief describes owning member-facing products across CRM, website, portal and events, with product, UX, data and AI reporting into one seat. That single-owner, whole-of-lifecycle mandate is the shape of my last seven years.</p>
+  </div>
+  <div class="fit-grid">
+    <div class="fit-card fu">
+      <div class="fc-req">The role wants · product ownership</div>
+      <h3 class="fc-title">Roadmaps, prioritisation, adoption and engagement outcomes</h3>
+      <p class="fc-body">At AVJennings I owned the digital product roadmap across the full customer lifecycle, working product-led with UX and engineering, accountable for engagement and conversion, not just delivery. At Plasmatic I shape product positioning and roadmap at board level.</p>
+    </div>
+    <div class="fit-card fu" style="transition-delay:0.06s;">
+      <div class="fc-req">The role wants · UX strategy</div>
+      <h3 class="fc-title">Accessibility, navigation, discoverability, design standards</h3>
+      <p class="fc-body">I set the UX strategy and governance at AVJennings: embedding research, usability testing and accessibility (WCAG) into how products were built, and holding the standards that keep an ecosystem coherent as it grows.</p>
+    </div>
+    <div class="fit-card fu" style="transition-delay:0.1s;">
+      <div class="fc-req">The role wants · platform &amp; vendor delivery</div>
+      <h3 class="fc-title">Own the ecosystem, lead the partners who build it</h3>
+      <p class="fc-body">I led the migration from a legacy Sitecore CMS to a modern headless architecture, orchestrating external partners and internal teams while keeping clear platform ownership. I lead vendor delivery rather than being tied to a single stack.</p>
+    </div>
+    <div class="fit-card fu" style="transition-delay:0.14s;">
+      <div class="fc-req">The role wants · team &amp; senior influence</div>
+      <h3 class="fc-title">Lead a multidisciplinary team, influence the leadership table</h3>
+      <p class="fc-body">I built and led an in-house multidisciplinary function across UX, design, content and digital, and advised executive and board stakeholders on direction and trade-offs. Comfortable both hands-on and in the room where decisions are made.</p>
+    </div>
+  </div>
+</section>
+
+<section class="lifecycle" id="lifecycle" aria-labelledby="lc-heading">
+  <div class="s-label" data-n="02 —">The member lifecycle</div>
+  <div class="two-col-intro">
+    <h2 class="sec-h2 fu" id="lc-heading">A college runs<br>on a lifecycle.<br>So does <em>my work.</em></h2>
+    <p class="sec-body fu" style="transition-delay:0.1s;">A Fellow's relationship with RANZCR runs from first application to lifelong advocacy. I've owned that same arc for customers and members before. Here is how each stage maps to work I've already done. Select a stage.</p>
+  </div>
+  <div class="lc-shell fu">
+    <div class="lc-stages" id="lcStages" role="tablist" aria-label="Member lifecycle stages"></div>
+    <div class="lc-detail" id="lcDetail" role="tabpanel" aria-live="polite"></div>
+  </div>
+</section>
+
+<section class="approach" id="approach" aria-labelledby="ap-heading">
+  <div class="s-label" data-n="03 —">How I'd approach it</div>
+  <div class="two-col-intro">
+    <h2 class="sec-h2 fu" id="ap-heading">The five things<br>the seat <em>owns.</em></h2>
+    <p class="sec-body fu" style="transition-delay:0.1s; color:var(--text-3);">The role folds product, UX, data and AI into one accountability. Each maps to something I've led before.</p>
+  </div>
+  <div class="ap-rows">
+    <article class="ap-row fu">
+      <div class="ap-idx" aria-hidden="true">01</div>
+      <div class="ap-title">Product ownership and roadmap</div>
+      <div class="ap-proof"><b>What I'd do:</b> own the roadmap across CRM, website, portal and events as one product, prioritised by member value and adoption. <b>Proof:</b> owned the AVJennings digital product roadmap end to end across the lifecycle.</div>
+    </article>
+    <article class="ap-row fu" style="transition-delay:0.05s;">
+      <div class="ap-idx" aria-hidden="true">02</div>
+      <div class="ap-title">UX strategy and design standards</div>
+      <div class="ap-proof"><b>What I'd do:</b> set accessibility, navigation and content discoverability standards so the whole ecosystem feels like one considered experience. <b>Proof:</b> embedded UX governance and WCAG-aware design practice at AVJennings.</div>
+    </article>
+    <article class="ap-row fu" style="transition-delay:0.09s;">
+      <div class="ap-idx" aria-hidden="true">03</div>
+      <div class="ap-title">Member data and Voice of Member</div>
+      <div class="ap-proof"><b>What I'd do:</b> turn member insight and behaviour into product decisions, and bring a structured approach to data governance and member privacy. <b>Proof:</b> ran analytics, heatmaps and A/B testing to drive decisions; built governance frameworks across content, publishing and accessibility.</div>
+    </article>
+    <article class="ap-row fu" style="transition-delay:0.13s;">
+      <div class="ap-idx" aria-hidden="true">04</div>
+      <div class="ap-title">AI strategy for member-facing products</div>
+      <div class="ap-proof"><b>What I'd do:</b> introduce AI where it genuinely helps members, ethically and transparently, with a human-centred bias and clear guardrails. <b>Proof:</b> designed and shipped an AI member-assistant experience on a recent build, and apply MIT design-thinking method to where AI does and does not belong.</div>
+    </article>
+    <article class="ap-row fu" style="transition-delay:0.17s;">
+      <div class="ap-idx" aria-hidden="true">05</div>
+      <div class="ap-title">Team, vendor and stakeholder leadership</div>
+      <div class="ap-proof"><b>What I'd do:</b> develop the Digital team, manage agency and platform partners, and influence senior leaders across Member Experience, Education, Events and Technology. <b>Proof:</b> built and led an in-house multidisciplinary team; led vendor delivery through a full platform migration.</div>
+    </article>
+  </div>
+</section>
+
+<section class="honest" id="honest" aria-labelledby="honest-heading">
+  <div class="s-label" data-n="04 —">The honest read</div>
+  <div class="honest-grid">
+    <div>
+      <h2 class="honest-h2 fu" id="honest-heading">Where I'd be<br>learning, and<br>why that's <em>fine.</em></h2>
+      <p class="honest-intro fu" style="transition-delay:0.08s;">Three things in the brief are marked desirable, not required, and I don't have them yet. I'd rather name them plainly than have you find them later. Here's each, and why none of them is the risk it might look like.</p>
+    </div>
+    <div class="honest-list fu" style="transition-delay:0.13s;">
+      <div class="honest-item">
+        <div class="honest-gap">Microsoft Dynamics</div>
+        <p class="honest-reframe">I haven't run Dynamics specifically. I have owned CRM and CMS platforms as products and led a full migration off a legacy stack. I lead platform change and vendor delivery; the tool is learnable, the judgement about what to build is the harder part, and that part I bring.</p>
+      </div>
+      <div class="honest-item">
+        <div class="honest-gap">Clinician and healthcare audience</div>
+        <p class="honest-reframe">This would be a new sector for me. My audiences have been high-trust, high-consideration and credential-driven: property buyers, fintech, professional services. The member-centred rigour transfers directly. I'd invest early in listening to Fellows and trainees before I touched the roadmap.</p>
+      </div>
+      <div class="honest-item">
+        <div class="honest-gap">Data governance depth</div>
+        <p class="honest-reframe">My governance record is in content, publishing and accessibility. Data governance and member privacy are the adjacent discipline. I'd bring the same structured, standards-led approach and the sense to lean on specialists where the detail demands it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="creds" id="creds" aria-labelledby="creds-heading">
+  <div class="s-label" data-n="05 —">Credentials</div>
+  <h2 class="sec-h2 fu" id="creds-heading" style="margin-bottom:clamp(2rem,3.5vw,3rem);">The short<br><em>version.</em></h2>
+  <div class="creds-strip fu">
+    <div class="cred hero-cred">
+      <div class="cred-k">Professional certification</div>
+      <div class="cred-v">CPM</div>
+      <div class="cred-sub">Certified Marketing Professional, Australian Marketing Institute. Covers the business and management side of the seat.</div>
+    </div>
+    <div class="cred">
+      <div class="cred-k">Postgraduate</div>
+      <div class="cred-v">MIT</div>
+      <div class="cred-sub">PG Diploma, Innovation &amp; Design Thinking (2020–2022). The method behind how I approach every problem.</div>
+    </div>
+    <div class="cred">
+      <div class="cred-k">Masters</div>
+      <div class="cred-v">Master of Design</div>
+      <div class="cred-sub">Swinburne University of Technology. Digital Media Design.</div>
+    </div>
+    <div class="cred">
+      <div class="cred-k">Experience</div>
+      <div class="cred-v">15+ years</div>
+      <div class="cred-sub">Senior creative, digital and product leadership across ANZ and APAC. Full working rights in Australia.</div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="contact-heading">
+  <div class="contact-bar" aria-hidden="true"></div>
+  <h2 class="contact-h2 fu" id="contact-heading">Worth a<br><em>conversation?</em></h2>
+  <p class="contact-sub fu" style="transition-delay:0.1s;">If the fit reads right, the tailored CV has the detail. And I'm happy to talk it through whenever suits.</p>
+  <div class="contact-actions fu" style="transition-delay:0.16s;">
+    <a href="VinayRaja_RANZCR_Resume2026.pdf" class="c-primary" id="cvFoot" download>Download tailored CV</a>
+    <a href="mailto:vinayraja@gmail.com?subject=RANZCR%20%C2%B7%20Senior%20Manager%2C%20Digital%20Product%20Experience%20%26%20Data" class="c-secondary" id="convFoot">Start a conversation</a>
+    <a href="tel:+61431188899" class="c-secondary" id="callFoot">Call +61 431 188 899</a>
+  </div>
+</section>
+
+</main>
+
+<footer role="contentinfo">
+  <div class="footer-mark">Vinay Raja <b>×</b> RANZCR</div>
+  <div class="footer-note">Prepared for RANZCR · Senior Manager, Digital Product Experience &amp; Data · July 2026</div>
+</footer>
+
+<script>
+  /* THEME */
+  const btn = document.getElementById('tbtn');
+  const bodyEl = document.body;
+  const saved = localStorage.getItem('vr-theme');
+  const sys = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  const initial = saved || sys;
+  bodyEl.setAttribute('data-theme', initial);
+  btn.setAttribute('aria-label', initial === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+  btn.addEventListener('click', () => {
+    const next = bodyEl.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    bodyEl.setAttribute('data-theme', next);
+    localStorage.setItem('vr-theme', next);
+    btn.setAttribute('aria-label', next === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+  });
+
+  /* GTM dataLayer helper */
+  window.dataLayer = window.dataLayer || [];
+  function track(event, extra) {
+    window.dataLayer.push(Object.assign({ event: event, campaign: 'ranzcr' }, extra || {}));
+  }
+  [['cvHero','cv_download'],['cvFoot','cv_download'],
+   ['convHero','start_conversation'],['convFoot','start_conversation'],
+   ['callHero','call_click'],['callFoot','call_click']].forEach(([id, ev]) => {
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('click', () => track(ev, { location: id }));
+  });
+
+  /* LIFECYCLE MAP */
+  const stages = [
+    {
+      name: 'Discover &amp; Apply',
+      moment: 'A prospective trainee or associate meets the College for the first time, through the website, an application, a first sign-in. This first impression sets the tone for a career-long relationship.',
+      bring: 'I have owned high-stakes first-touch and onboarding journeys for discerning audiences. At AVJennings I rebuilt discovery and lead journeys across the lifecycle, replacing static pages with digital-first experiences that lifted engagement and lead quality.'
+    },
+    {
+      name: 'Train',
+      moment: 'Trainees move through a five to six year pathway of exams, supervision and resources. Digital here either supports the hardest years of a clinician\u2019s career or gets in the way.',
+      bring: 'Product thinking applied to complex, multi-stage journeys. I turn a messy real-world process into clear roadmaps, prioritised backlogs and MVPs that actually ship, working product-led with UX and engineering.'
+    },
+    {
+      name: 'Qualify',
+      moment: 'Admission to Fellowship, FRANZCR, the College\u2019s highest level of membership. A career milestone that deserves a seamless, dignified digital moment, not a form that fights back.',
+      bring: 'UX strategy and governance. I set the standards for navigation, accessibility and content discoverability so the pivotal moments feel considered and the whole system stays coherent.'
+    },
+    {
+      name: 'Practise &amp; CPD',
+      moment: 'Fellows renew annually, manage CPD, pay fees and keep credentials current in the MyRANZCR portal. This is the engine room of the member relationship, used year after year.',
+      bring: 'Ownership of portal and self-service behaviour, with data-led optimisation of the flows members use most. At AVJennings I ran continuous optimisation with analytics and A/B testing to strip friction out of the journeys that mattered.'
+    },
+    {
+      name: 'Engage',
+      moment: 'Members deepen their involvement: committees, reference groups, examiners, RANZCR Jobs, special interest groups. Engagement is where the value of membership compounds.',
+      bring: 'Cross-functional leadership across product, content and community touchpoints, plus the data instinct to see where engagement is building and where it is quietly leaking away.'
+    },
+    {
+      name: 'Advocate',
+      moment: 'The collective voice: standards, guidelines and advocacy for better patient care. The reason the College exists in the first place.',
+      bring: 'I connect brand, product and experience to purpose. My strongest work has always been where good digital thinking serves something bigger than the interface.'
+    }
+  ];
+
+  const stagesEl = document.getElementById('lcStages');
+  const detailEl = document.getElementById('lcDetail');
+
+  stages.forEach((s, i) => {
+    const b = document.createElement('button');
+    b.className = 'lc-stage' + (i === 0 ? ' active' : '');
+    b.setAttribute('role', 'tab');
+    b.setAttribute('aria-selected', i === 0 ? 'true' : 'false');
+    b.dataset.i = i;
+    b.innerHTML = '<span class="lc-stage-n">0' + (i + 1) + '</span><span class="lc-stage-name">' + s.name + '</span>';
+    b.addEventListener('click', () => select(i));
+    stagesEl.appendChild(b);
+  });
+
+  function render(i) {
+    const s = stages[i];
+    detailEl.innerHTML =
+      '<div class="lc-detail-tag">Stage 0' + (i + 1) + ' · ' + s.name + '</div>' +
+      '<div class="lc-detail-h">' + s.name + '</div>' +
+      '<div class="lc-block"><div class="lc-block-label">The member moment</div><p class="lc-block-body">' + s.moment + '</p></div>' +
+      '<div class="lc-block bring"><div class="lc-block-label">What I bring</div><p class="lc-block-body">' + s.bring + '</p></div>';
+  }
+
+  function select(i) {
+    document.querySelectorAll('.lc-stage').forEach(el => {
+      const on = +el.dataset.i === i;
+      el.classList.toggle('active', on);
+      el.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
+    render(i);
+    track('lifecycle_stage_open', { stage: stages[i].name.replace(/&amp;/g, '&'), stage_index: i + 1 });
+  }
+
+  render(0);
+
+  /* SCROLL REVEAL */
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }});
+  }, { threshold: 0.09 });
+  document.querySelectorAll('.fu').forEach(el => obs.observe(el));
+
+  /* SCROLL INDICATOR */
+  const indicator = document.getElementById('scrollIndicator');
+  window.addEventListener('scroll', () => {
+    indicator.classList.toggle('hidden', window.scrollY > 80);
+  }, { passive: true });
+</script>
+</body>
+</html>
