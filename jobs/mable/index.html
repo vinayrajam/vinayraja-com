@@ -9,7 +9,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Instrument+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Instrument+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -24,9 +24,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   --bg-alt:#ede7db;
   --ink:#141210;
   --ink-2:#3d3931;
-  --ink-3:#77716a;
-  --orange:#bf5b25;
-  --orange-soft:rgba(191,91,37,0.10);
+  --ink-3:#6c6760;
+  --orange:#a54f20;
+  --orange-dk-bg:#d06328;
+  --orange-soft:rgba(165,79,32,0.10);
   --line:rgba(20,18,16,0.11);
   --line-2:rgba(20,18,16,0.20);
   --pad:max(1.4rem,5.5vw);
@@ -51,16 +52,18 @@ h1 em,h2 em{
   font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-weight:400;
   color:var(--orange);font-size:1.06em;letter-spacing:-0.02em;
 }
+.plan h2 em{color:var(--orange-dk-bg)}
 h3{font-family:'Instrument Sans',sans-serif;font-weight:600;font-size:1.02rem;
    letter-spacing:-0.01em;line-height:1.3;color:var(--ink)}
 .mono{font-family:'DM Mono',monospace;font-weight:400;
-      font-size:10px;letter-spacing:0.2em;text-transform:uppercase}
+      font-size:11.5px;letter-spacing:0.18em;text-transform:uppercase}
 
 section{padding:clamp(56px,8vw,104px) var(--pad)}
 .wrap{max-width:1180px;margin:0 auto}
 .label{color:var(--orange);display:flex;align-items:center;gap:0.7rem;
        margin-bottom:clamp(1.6rem,3vw,2.6rem)}
 .label::before{content:attr(data-n);color:var(--ink-3)}
+.label{speak:never}
 .lede{font-size:var(--body);color:var(--ink-2);line-height:1.8}
 .small{font-size:var(--small);color:var(--ink-2);line-height:1.75}
 
@@ -76,14 +79,14 @@ section{padding:clamp(56px,8vw,104px) var(--pad)}
 .meta-row{display:flex;justify-content:space-between;gap:1rem;
           padding-bottom:0.7rem;border-bottom:0.5px solid var(--line);
           font-size:var(--small);color:var(--ink-2)}
-.meta-row span:first-child{font-family:'DM Mono',monospace;font-size:10px;
-          letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-3)}
+.meta-row span:first-child{font-family:'DM Mono',monospace;font-size:11px;
+          letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-3)}
 .meta-row span:last-child{text-align:right;font-weight:400}
 
 /* CTA */
 .ctas{display:flex;flex-wrap:wrap;gap:0.7rem;margin-top:2rem}
-.btn{font-family:'DM Mono',monospace;font-weight:500;font-size:11px;
-     letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;
+.btn{font-family:'DM Mono',monospace;font-weight:500;font-size:11.5px;
+     letter-spacing:0.11em;text-transform:uppercase;text-decoration:none;
      padding:14px 26px;display:inline-flex;align-items:center;gap:0.6rem;
      border:0.5px solid var(--ink);transition:all .22s ease}
 .btn-primary{background:var(--ink);color:var(--bg)}
@@ -99,7 +102,7 @@ section{padding:clamp(56px,8vw,104px) var(--pad)}
      transition:padding-left .22s ease}
 .row:hover{padding-left:0.6rem}
 .ask{font-size:var(--small);color:var(--ink);font-weight:500;line-height:1.55}
-.ask .mono{display:block;color:var(--orange);margin-bottom:0.5rem;font-size:9px}
+.ask .mono{display:block;color:var(--orange);margin-bottom:0.5rem;font-size:11px;letter-spacing:0.14em}
 .evidence{font-size:var(--small);color:var(--ink-2);line-height:1.75}
 
 /* GAPS */
@@ -108,20 +111,20 @@ section{padding:clamp(56px,8vw,104px) var(--pad)}
           border:0.5px solid var(--line)}
 .gap-card{background:var(--bg);padding:clamp(1.3rem,2.2vw,2rem)}
 .gap-card h3{margin-bottom:0.7rem}
-.gap-card .tag{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.18em;
+.gap-card .tag{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.14em;
      text-transform:uppercase;color:var(--orange);border:0.5px solid var(--orange);
      padding:3px 8px;display:inline-block;margin-bottom:1rem}
 
 /* PLAN */
 .plan{background:#1c1a16;color:#efe9df}
-.plan .label{color:var(--orange)}
+.plan .label{color:var(--orange-dk-bg)}
 .plan h2{color:#efe9df}
 .plan .lede{color:rgba(239,233,223,0.66)}
 .plan-rows{margin-top:clamp(2rem,3.5vw,3.2rem);border-top:0.5px solid rgba(239,233,223,0.13)}
 .plan-row{display:grid;grid-template-columns:150px 1fr;gap:clamp(1.2rem,3vw,3rem);
           padding:clamp(1.3rem,2.2vw,2rem) 0;border-bottom:0.5px solid rgba(239,233,223,0.13)}
-.plan-when{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.16em;
-           text-transform:uppercase;color:var(--orange);padding-top:3px}
+.plan-when{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.16em;
+           text-transform:uppercase;color:var(--orange-dk-bg);padding-top:3px}
 .plan-row h3{color:#efe9df;margin-bottom:0.6rem}
 .plan-row p{font-size:var(--small);color:rgba(239,233,223,0.6);line-height:1.75}
 
@@ -130,9 +133,9 @@ section{padding:clamp(56px,8vw,104px) var(--pad)}
 .tl{border-top:0.5px solid var(--line)}
 .tl-row{display:grid;grid-template-columns:170px 1fr;gap:clamp(1.2rem,3vw,3rem);
         padding:clamp(1.2rem,2.2vw,1.9rem) 0;border-bottom:0.5px solid var(--line)}
-.tl-when{font-family:'DM Mono',monospace;font-size:10px;letter-spacing:0.13em;
+.tl-when{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.12em;
          color:var(--ink-3);line-height:1.7;padding-top:3px}
-.tl-org{font-family:'DM Mono',monospace;font-size:9px;letter-spacing:0.16em;
+.tl-org{font-family:'DM Mono',monospace;font-size:11px;letter-spacing:0.14em;
         text-transform:uppercase;color:var(--orange);margin-bottom:0.4rem}
 .tl-row h3{margin-bottom:0.5rem}
 .tl-row p{font-size:var(--small);color:var(--ink-2);line-height:1.75}
@@ -152,12 +155,15 @@ section{padding:clamp(56px,8vw,104px) var(--pad)}
 .contact .ctas{justify-content:center}
 footer{padding:1.4rem var(--pad);border-top:0.5px solid var(--line);
        display:flex;justify-content:space-between;flex-wrap:wrap;gap:0.7rem;
-       font-size:11px;color:var(--ink-3)}
-.disc{font-size:10.5px;color:var(--ink-3);max-width:620px;margin:2.6rem auto 0;line-height:1.7}
+       font-size:12px;color:var(--ink-3)}
+.disc{font-size:11.5px;color:var(--ink-3);max-width:620px;margin:2.6rem auto 0;line-height:1.7}
 
 .fu{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
 .fu.in{opacity:1;transform:none}
-:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+.skip{position:absolute;left:-9999px;top:0;z-index:99;background:var(--ink);color:var(--bg);
+       padding:12px 20px;font-family:'DM Mono',monospace;font-size:12px;text-decoration:none}
+.skip:focus{left:0}
+:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
 
 @media(max-width:880px){
   .hero-grid{grid-template-columns:1fr;gap:2rem}
@@ -175,18 +181,20 @@ footer{padding:1.4rem var(--pad);border-top:0.5px solid var(--line);
   *{transition-duration:0.01ms !important}
 }
 </style>
+<noscript><link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&family=Instrument+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@1&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet"></noscript>
 </head>
 <body>
+<a class="skip" href="#match">Skip to content</a>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9KQJZZB"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<header class="hero">
+<header class="hero" role="banner">
   <div class="wrap">
     <p class="mono hero-tag">Application &nbsp;/&nbsp; Mable</p>
     <h1>Someone has to<br>own the <em>platform.</em></h1>
     <div class="hero-grid">
       <div>
-        <p class="lede">Vinay Raja, for Senior Manager, Digital Experience. Seven years as business owner of a multi-brand marketing web estate at AVJennings: ran the Sitecore to headless migration, held the vendor contracts, and sat as the single intake point between every non-technical stakeholder and the build.</p>
+        <p class="lede">Vinay Raja, for Senior Manager, Digital Experience. Seven years owning a multi-brand marketing web estate at AVJennings: ran the Sitecore to headless migration, held the vendor contracts, and sat as the single intake point between every non-technical stakeholder and the build.</p>
         <div class="ctas">
           <a class="btn btn-primary" href="VinayRaja_Resume_Mable.pdf" download>Download r&eacute;sum&eacute;</a>
           <a class="btn btn-ghost" href="mailto:vinayraja@gmail.com?subject=Senior%20Manager%2C%20Digital%20Experience">Email me</a>
@@ -202,10 +210,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </header>
 
-<section class="match" id="match">
+<main id="main">
+
+<section class="match" id="match" aria-labelledby="h-match">
   <div class="wrap">
     <p class="mono label" data-n="01 /">Against the brief</p>
-    <h2 class="fu">What you asked for.<br>What I have <em>done.</em></h2>
+    <h2 class="fu" id="h-match">What you asked for.<br>What I have <em>done.</em></h2>
     <div class="rows" style="margin-top:clamp(2rem,3.5vw,3.2rem)">
 
       <div class="row fu">
@@ -242,10 +252,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<section class="gaps" id="gaps">
+<section class="gaps" id="gaps" aria-labelledby="h-gaps">
   <div class="wrap">
     <p class="mono label" data-n="02 /">Straight answers</p>
-    <h2 class="fu">Where I do <em>not</em> match.</h2>
+    <h2 class="fu" id="h-gaps">Where I do <em>not</em> match.</h2>
     <p class="lede fu" style="max-width:560px;margin-top:1.1rem;margin-bottom:clamp(1.8rem,3vw,2.6rem)">You will find these anyway. Better you hear them from me first.</p>
     <div class="gap-grid">
       <div class="gap-card fu">
@@ -262,10 +272,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<section class="plan" id="plan">
+<section class="plan" id="plan" aria-labelledby="h-plan">
   <div class="wrap">
     <p class="mono label" data-n="03 /">First ninety days</p>
-    <h2 class="fu">What I would <em>actually</em> do.</h2>
+    <h2 class="fu" id="h-plan">What I would <em>actually</em> do.</h2>
     <p class="lede fu" style="max-width:540px;margin-top:1.1rem">Written from the outside, so treat it as a way of thinking. It would survive contact with your reality for about a fortnight, which is the point.</p>
     <div class="plan-rows">
       <div class="plan-row fu">
@@ -293,10 +303,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<section class="track" id="track">
+<section class="track" id="track" aria-labelledby="h-track">
   <div class="wrap">
     <p class="mono label" data-n="04 /">Track record</p>
-    <h2 class="fu">Where the work<br>was <em>done.</em></h2>
+    <h2 class="fu" id="h-track">Where the work<br>was <em>done.</em></h2>
     <div class="tl" style="margin-top:clamp(2rem,3.5vw,3.2rem)">
       <div class="tl-row fu">
         <div class="tl-when">2025 to present</div>
@@ -311,7 +321,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div>
           <div class="tl-org">AVJennings, Sydney</div>
           <h3>Creative &amp; Digital Experience Director</h3>
-          <p>Business owner for the marketing web estate at an ASX-listed residential developer. Led the Sitecore to Storyblok headless migration, owned vendors and contracts, ran the delivery rhythm, built the in-house function. Publishing cycles moved from weeks to days.</p>
+          <p>Owned the marketing web estate at an ASX-listed residential developer. Led the Sitecore to Storyblok headless migration, owned vendors and contracts, ran the delivery rhythm, built the in-house function. Publishing cycles moved from weeks to days.</p>
         </div>
       </div>
       <div class="tl-row fu">
@@ -342,10 +352,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<section class="creds" id="creds">
+<section class="creds" id="creds" aria-labelledby="h-creds">
   <div class="wrap">
     <p class="mono label" data-n="05 /">Credentials</p>
-    <h2 class="fu">On <em>paper.</em></h2>
+    <h2 class="fu" id="h-creds">On <em>paper.</em></h2>
     <div class="cred-list fu" style="margin-top:clamp(1.8rem,3vw,2.6rem)">
       <div class="cred">Certified Marketing Professional (CPM), Australian Marketing Institute</div>
       <div class="cred">Postgraduate Diploma, Innovation &amp; Design Thinking, MIT</div>
@@ -357,10 +367,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<section class="contact" id="contact">
+<section class="contact" id="contact" aria-labelledby="h-contact">
   <div class="wrap">
     <p class="mono label" style="justify-content:center" data-n="">Next step</p>
-    <h2 class="fu">Happy to talk it <em>through.</em></h2>
+    <h2 class="fu" id="h-contact">Happy to talk it <em>through.</em></h2>
     <p class="lede fu">If it looks close enough to be worth twenty minutes, I would rather have the conversation than keep writing about it.</p>
     <div class="ctas fu">
       <a class="btn btn-primary" href="mailto:vinayraja@gmail.com?subject=Senior%20Manager%2C%20Digital%20Experience">vinayraja@gmail.com</a>
@@ -371,7 +381,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<footer>
+</main>
+
+<footer role="contentinfo">
   <span>Vinay Raja</span>
   <span>Application for Mable, Senior Manager, Digital Experience</span>
 </footer>
